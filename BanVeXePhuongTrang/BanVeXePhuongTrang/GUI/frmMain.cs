@@ -280,21 +280,21 @@ namespace BanVeXePhuongTrang
             tabControl.Tabs.Remove(tabControl.SelectedTab);
         }
 
-        private void btLichChuyenBay_Click(object sender, EventArgs e)
+        private void btLichChuyenDi_Click(object sender, EventArgs e)
         {
-            if(checkTab("Lịch Chuyến Bay")==false)
+            if (checkTab("Lịch Chuyến Đi") == false)
             {
                 frmLichChuyenDi form = new frmLichChuyenDi();
-                AddTabControl(form, "Lịch Chuyến Bay");
+                AddTabControl(form, "Lịch Chuyến Đi");
             }
         }
 
-        private void btVeChuyenBay_Click(object sender, EventArgs e)
+        private void btVeXe_Click(object sender, EventArgs e)
         {
-            if (checkTab("Vé Chuyến Bay") == false)
+            if (checkTab("Vé Xe") == false)
             {
                 frmVeXe form = new frmVeXe();
-                AddTabControl(form, "Vé Chuyến Bay");
+                AddTabControl(form, "Vé Xe");
             }
         }
 
@@ -307,12 +307,12 @@ namespace BanVeXePhuongTrang
             }
         }
 
-        private void btTraCuuChuyenBay_Click(object sender, EventArgs e)
+        private void btTraCuuChuyenDi_Click(object sender, EventArgs e)
         {
-            if (checkTab("Tra Cứu Chuyến Bay") == false)
+            if (checkTab("Tra Cứu Chuyến Đi") == false)
             {
                 frmTraCuuChuyenDi form = new frmTraCuuChuyenDi();
-                AddTabControl(form, "Tra Cứu Chuyến Bay");
+                AddTabControl(form, "Tra Cứu Chuyến Đi");
             }
         }
 
@@ -362,30 +362,30 @@ namespace BanVeXePhuongTrang
             }
         }
 
-        private void btQLChuyenBay_Click(object sender, EventArgs e)
+        private void btQLChuyenDi_Click(object sender, EventArgs e)
         {
-            if (checkTab("Quản Lý Chuyến Bay") == false)
+            if (checkTab("Quản Lý Chuyến Đi") == false)
             {
                 frmQuanLyChuyenDi form = new frmQuanLyChuyenDi();
-                AddTabControl(form, "Quản Lý Chuyến Bay");
+                AddTabControl(form, "Quản Lý Chuyến Đi");
             }
         }
 
-        private void btQLSanBay_Click(object sender, EventArgs e)
+        private void btQLBenXe_Click(object sender, EventArgs e)
         {
-            if (checkTab("Quản Lý Sân Bay") == false)
+            if (checkTab("Quản Lý Bến Xe") == false)
             {
                 frmQuanLyBenXe form = new frmQuanLyBenXe();
-                AddTabControl(form, "Quản Lý Sân Bay");
+                AddTabControl(form, "Quản Lý Bến Xe");
             }
         }
 
-        private void btQLTuyenBay_Click(object sender, EventArgs e)
+        private void btQLTuyenXe_Click(object sender, EventArgs e)
         {
-            if (checkTab("Quản Lý Tuyến Bay") == false)
+            if (checkTab("Quản Lý Tuyến Xe") == false)
             {
                 frmQuanLyTuyenXe form = new frmQuanLyTuyenXe();
-                AddTabControl(form, "Quản Lý Tuyến Bay");
+                AddTabControl(form, "Quản Lý Tuyến Xe");
             }
         }
 
@@ -396,12 +396,12 @@ namespace BanVeXePhuongTrang
 
         private void btnNhanLich_Click(object sender, EventArgs e)
         {
-            btLichChuyenBay_Click(sender, e);
+            btLichChuyenDi_Click(sender, e);
         }
 
         private void btnVe_Click(object sender, EventArgs e)
         {
-            btVeChuyenBay_Click(sender, e);
+            btVeXe_Click(sender, e);
         }
 
         private void btnDatVe_Click(object sender, EventArgs e)
@@ -411,7 +411,7 @@ namespace BanVeXePhuongTrang
 
         private void btnTraCuu_Click(object sender, EventArgs e)
         {
-            btTraCuuChuyenBay_Click(sender, e);
+            btTraCuuChuyenDi_Click(sender, e);
         }
 
         private void btnBaoCaoThang_Click(object sender, EventArgs e)

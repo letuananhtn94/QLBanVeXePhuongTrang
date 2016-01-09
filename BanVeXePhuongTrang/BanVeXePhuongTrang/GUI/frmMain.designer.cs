@@ -3276,7 +3276,7 @@
             this.btQLChuyenDi.Name = "btQLChuyenDi";
             this.btQLChuyenDi.SubItemsExpandWidth = 14;
             this.btQLChuyenDi.Text = "Chuyến đi";
-            this.btQLChuyenDi.Click += new System.EventHandler(this.btQLChuyenBay_Click);
+            this.btQLChuyenDi.Click += new System.EventHandler(this.btQLChuyenDi_Click);
             // 
             // btQLTuyenXe
             // 
@@ -3287,7 +3287,7 @@
             this.btQLTuyenXe.Name = "btQLTuyenXe";
             this.btQLTuyenXe.SubItemsExpandWidth = 14;
             this.btQLTuyenXe.Text = "Tuyến xe";
-            this.btQLTuyenXe.Click += new System.EventHandler(this.btQLTuyenBay_Click);
+            this.btQLTuyenXe.Click += new System.EventHandler(this.btQLTuyenXe_Click);
             // 
             // btQLBenXe
             // 
@@ -3298,7 +3298,7 @@
             this.btQLBenXe.Name = "btQLBenXe";
             this.btQLBenXe.SubItemsExpandWidth = 14;
             this.btQLBenXe.Text = "Bến xe";
-            this.btQLBenXe.Click += new System.EventHandler(this.btQLSanBay_Click);
+            this.btQLBenXe.Click += new System.EventHandler(this.btQLBenXe_Click);
             // 
             // btnQLXe
             // 
@@ -3365,7 +3365,7 @@
             this.btLichChuyenDi.Name = "btLichChuyenDi";
             this.btLichChuyenDi.SubItemsExpandWidth = 14;
             this.btLichChuyenDi.Text = "Lịch chuyến đi";
-            this.btLichChuyenDi.Click += new System.EventHandler(this.btLichChuyenBay_Click);
+            this.btLichChuyenDi.Click += new System.EventHandler(this.btLichChuyenDi_Click);
             // 
             // btnVeXe
             // 
@@ -3376,7 +3376,7 @@
             this.btnVeXe.Name = "btnVeXe";
             this.btnVeXe.SubItemsExpandWidth = 14;
             this.btnVeXe.Text = "Vé xe";
-            this.btnVeXe.Click += new System.EventHandler(this.btVeChuyenBay_Click);
+            this.btnVeXe.Click += new System.EventHandler(this.btVeXe_Click);
             // 
             // btDSDatVe
             // 
@@ -3453,7 +3453,7 @@
             this.btTraCuuChuyenBay.ImageFixedSize = new System.Drawing.Size(60, 60);
             this.btTraCuuChuyenBay.Name = "btTraCuuChuyenBay";
             this.btTraCuuChuyenBay.SubItemsExpandWidth = 14;
-            this.btTraCuuChuyenBay.Click += new System.EventHandler(this.btTraCuuChuyenBay_Click);
+            this.btTraCuuChuyenBay.Click += new System.EventHandler(this.btTraCuuChuyenDi_Click);
             // 
             // rbpBaoCao
             // 
