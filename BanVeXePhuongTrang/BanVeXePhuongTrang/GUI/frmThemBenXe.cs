@@ -25,14 +25,14 @@ namespace BanVeXePhuongTrang.GUI
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            BLL_BenXe temp = new BLL_BenXe(txtMaBenXe.Text.ToString(), txtTenBenXe.Text.ToString());
-            if(temp.canInsert())
+            BLL_BenXe temp = new BLL_BenXe();
+            if (temp.canInsert(txtMaBenXe.Text.ToString(), txtTenBenXe.Text.ToString()))
             {
-                DAL.QUANLYXEKHACHEntities db = new DAL.QUANLYXEKHACHEntities();
+                QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
 
                 tblBenXe t = new tblBenXe();
-                t.MaBenXe = temp.maBenXe;
-                t.TenBenXe = temp.tenBenXe;
+                t.MaBenXe = txtMaBenXe.Text.ToString();
+                t.TenBenXe = txtTenBenXe.Text.ToString();
                 db.tblBenXes.Add(t);
                 db.SaveChanges();
 

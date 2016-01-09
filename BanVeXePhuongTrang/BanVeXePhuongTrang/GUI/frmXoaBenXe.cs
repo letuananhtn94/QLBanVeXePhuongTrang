@@ -7,15 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BanVeXePhuongTrang.DAL;
 
 namespace BanVeXePhuongTrang.GUI
 {
     public partial class frmXoaBenXe : Form
     {
-        DataTable data;
         public frmXoaBenXe()
         {
             InitializeComponent();
+        }
+
+        private void frmXoaBenXe_Load(object sender, EventArgs e)
+        {
+            cbTenBenXe.Items.Clear();
+
+            foreach (var item in new QUANLYXEKHACHEntities().tblBenXes.ToList())
+            {
+                cbTenBenXe.Items.Add(item.TenBenXe);
+            }
         }
 
         private void btThoat_Click(object sender, EventArgs e)
@@ -23,19 +33,26 @@ namespace BanVeXePhuongTrang.GUI
             this.Close();
         }
 
-        private void cbMaSanBay_MouseClick(object sender, MouseEventArgs e)
-        {
-            cbMaSanBay.Items.Clear();
-            cbMaSanBay.Text = "";
-
-            foreach (DataRow row in data.Rows)
-            {
-                cbMaSanBay.Items.Add(row.ItemArray[0].ToString());
-            }
-        }
 
         private void btXoa_Click(object sender, EventArgs e)
         {
+            QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+            BLL.BLL_BenXe temp = new BLL.BLL_BenXe();
+
+            tblBenXe benXe = db.tblBenXes.Where(t => t.TenBenXe == cbTenBenXe.SelectedItem.ToString()).SingleOrDefault();
+            if(benXe != null)
+            {
+                if (temp.canDelete(benXe.MaBenXe))
+                {
+                    db.tblBenXes.Remove(benXe);
+                    db.SaveChanges();
+
+                    frmXoaBenXe_Load(sender, e);
+                    MessageBox.Show("Xóa thành công");
+                }
+            }
         }
+
+        
     }
 }

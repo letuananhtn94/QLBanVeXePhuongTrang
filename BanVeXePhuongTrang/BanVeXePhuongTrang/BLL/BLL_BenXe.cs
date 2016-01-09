@@ -9,31 +9,31 @@ namespace BanVeXePhuongTrang.BLL
 {
     class BLL_BenXe
     {
-        public string maBenXe;
-        public string tenBenXe;
-
-        public BLL_BenXe(string maBen, string tenBen)
-        {
-            maBenXe = maBen;
-            tenBenXe = tenBen;
-        }
-
-        public bool canInsert()
+        public bool canInsert(string maBen, string tenBen)
         {
             QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
-            if (db.tblBenXes.Where(t => t.MaBenXe == maBenXe || t.TenBenXe == tenBenXe).ToArray().Length != 0)
+            if (db.tblBenXes.Where(t => t.MaBenXe == maBen || t.TenBenXe == tenBen).ToArray().Length != 0)
                 return false;
 
             return true;
         }
 
-        public bool canUpdate()
+        public bool canUpdate(string maBen, string tenBen)
         {
             QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
-            if (db.tblBenXes.Where(t => t.MaBenXe != maBenXe && t.TenBenXe == tenBenXe).ToArray().Length != 0)
+            if (db.tblBenXes.Where(t => t.MaBenXe != maBen && t.TenBenXe == tenBen).ToArray().Length != 0)
                 return false;
 
             return true;
+        }
+
+        public bool canDelete(string maBen)
+        {
+            QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+            if (db.tblBenXes.Where(t => t.MaBenXe == maBen).ToArray().Length != 0)
+                return true;
+
+            return false;
         }
     }
 }

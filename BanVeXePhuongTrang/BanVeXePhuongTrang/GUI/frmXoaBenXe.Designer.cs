@@ -30,12 +30,12 @@
         {
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
-            this.cbMaSanBay = new System.Windows.Forms.ComboBox();
+            this.cbTenBenXe = new System.Windows.Forms.ComboBox();
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
-            this.Label2 = new System.Windows.Forms.Label();
             this.btXoa = new DevComponents.DotNetBar.ButtonX();
             this.btThoat = new DevComponents.DotNetBar.ButtonX();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Label2 = new System.Windows.Forms.Label();
             this.panelEx1.SuspendLayout();
             this.panelEx2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
@@ -64,7 +64,7 @@
             // 
             this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx2.Controls.Add(this.cbMaSanBay);
+            this.panelEx2.Controls.Add(this.cbTenBenXe);
             this.panelEx2.Controls.Add(this.reflectionLabel1);
             this.panelEx2.Controls.Add(this.btXoa);
             this.panelEx2.Controls.Add(this.btThoat);
@@ -84,16 +84,15 @@
             this.panelEx2.Style.GradientAngle = 90;
             this.panelEx2.TabIndex = 1;
             // 
-            // cbMaSanBay
+            // cbTenBenXe
             // 
-            this.cbMaSanBay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMaSanBay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbMaSanBay.FormattingEnabled = true;
-            this.cbMaSanBay.Location = new System.Drawing.Point(203, 114);
-            this.cbMaSanBay.Name = "cbMaSanBay";
-            this.cbMaSanBay.Size = new System.Drawing.Size(208, 27);
-            this.cbMaSanBay.TabIndex = 89;
-            this.cbMaSanBay.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbMaSanBay_MouseClick);
+            this.cbTenBenXe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTenBenXe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbTenBenXe.FormattingEnabled = true;
+            this.cbTenBenXe.Location = new System.Drawing.Point(203, 114);
+            this.cbTenBenXe.Name = "cbTenBenXe";
+            this.cbTenBenXe.Size = new System.Drawing.Size(208, 27);
+            this.cbTenBenXe.TabIndex = 89;
             // 
             // reflectionLabel1
             // 
@@ -107,15 +106,6 @@
             this.reflectionLabel1.Size = new System.Drawing.Size(217, 56);
             this.reflectionLabel1.TabIndex = 88;
             this.reflectionLabel1.Text = "<b><font size=\"+6\"><i></i><font color=\"#B02B2C\">XÓA BẾN XE</font></font></b>";
-            // 
-            // Label2
-            // 
-            this.Label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.Label2.Location = new System.Drawing.Point(77, 117);
-            this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(106, 23);
-            this.Label2.TabIndex = 35;
-            this.Label2.Text = "Mã Bến Xe:";
             // 
             // btXoa
             // 
@@ -156,6 +146,15 @@
             this.PictureBox1.TabIndex = 42;
             this.PictureBox1.TabStop = false;
             // 
+            // Label2
+            // 
+            this.Label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Label2.Location = new System.Drawing.Point(77, 117);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(106, 23);
+            this.Label2.TabIndex = 35;
+            this.Label2.Text = "Tên Bến Xe:";
+            // 
             // frmXoaBenXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,6 +166,7 @@
             this.Name = "frmXoaBenXe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Xóa Bến Xe";
+            this.Load += new System.EventHandler(this.frmXoaBenXe_Load);
             this.panelEx1.ResumeLayout(false);
             this.panelEx2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
@@ -183,6 +183,6 @@
         private DevComponents.DotNetBar.ButtonX btThoat;
         internal System.Windows.Forms.PictureBox PictureBox1;
         internal System.Windows.Forms.Label Label2;
-        private System.Windows.Forms.ComboBox cbMaSanBay;
+        private System.Windows.Forms.ComboBox cbTenBenXe;
     }
 }

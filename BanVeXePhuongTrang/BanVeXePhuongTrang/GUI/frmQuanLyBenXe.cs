@@ -17,12 +17,17 @@ namespace BanVeXePhuongTrang.GUI
         public frmQuanLyBenXe()
         {
             InitializeComponent();
+            dtgDanhSachBen.AutoGenerateColumns = false;
         }
 
         private void frmQuanLyBenXe_Load(object sender, EventArgs e)
         {
-            dtgDanhSachBen.Rows.Clear();
-            dtgDanhSachBen.DataSource = new QUANLYXEKHACHEntities().tblBenXes.ToList<tblBenXe>();
+            try
+            {
+                dtgDanhSachBen.Rows.Clear();
+                dtgDanhSachBen.DataSource = new QUANLYXEKHACHEntities().tblBenXes.ToList<tblBenXe>();
+            }catch
+            { }
         }
 
         private void btThoat_Click(object sender, EventArgs e)
@@ -36,8 +41,6 @@ namespace BanVeXePhuongTrang.GUI
         {
             frmXoaBenXe form = new frmXoaBenXe();
             form.Show();
-
-          
         }
 
         private void btSua_Click(object sender, EventArgs e)
@@ -56,7 +59,7 @@ namespace BanVeXePhuongTrang.GUI
 
         private void buttonX1_Click(object sender, EventArgs e)
         {
-           
+            frmQuanLyBenXe_Load(sender, e);
         }
     }
 }
