@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BanVeXePhuongTrang;
+using BanVeXePhuongTrang.DAL;
 
 namespace BanVeXePhuongTrang.GUI
 {
@@ -16,10 +17,13 @@ namespace BanVeXePhuongTrang.GUI
         public frmQuanLyBenXe()
         {
             InitializeComponent();
-           
         }
 
-   
+        private void frmQuanLyBenXe_Load(object sender, EventArgs e)
+        {
+            dtgDanhSachBen.Rows.Clear();
+            dtgDanhSachBen.DataSource = new QUANLYXEKHACHEntities().tblBenXes.ToList<tblBenXe>();
+        }
 
         private void btThoat_Click(object sender, EventArgs e)
         {
@@ -54,6 +58,5 @@ namespace BanVeXePhuongTrang.GUI
         {
            
         }
-
     }
 }
