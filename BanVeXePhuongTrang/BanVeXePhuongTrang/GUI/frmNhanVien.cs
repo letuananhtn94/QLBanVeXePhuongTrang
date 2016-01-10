@@ -24,6 +24,7 @@ namespace BanVeXePhuongTrang.GUI
 
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
+            try { 
             QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
             cbQuyenHan.DataSource = db.tblPhanQuyens.Select(t => t.TenQuyen).ToList();
             cbLoaiNV.Items.Clear();
@@ -32,6 +33,8 @@ namespace BanVeXePhuongTrang.GUI
             BLL_NhanVien temp = new BLL_NhanVien();
             txtMaNhanVien.Text = temp.getLastestIndex().ToString();
             LoadDataGridView();
+            }
+            catch { }
         }
       
         public void LoadDataGridView()
