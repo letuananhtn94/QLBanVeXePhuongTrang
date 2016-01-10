@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BanVeXePhuongTrang.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,28 +13,47 @@ namespace BanVeXePhuongTrang.GUI
 {
     public partial class frmDoiMatKhau : Form
     {
-        string ten;
-        public frmDoiMatKhau(string strTextBox)
+        int ma;
+        public frmDoiMatKhau(int manv)
         {
             InitializeComponent();
-            ten = strTextBox;
+            ma = manv;
         }
 
         private void btluu_Click(object sender, EventArgs e)
         {
-           
+            try
+            {
+                QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+                int id = ma;
+                tblTaiKhoan tk = db.tblTaiKhoans.Where(t => t.MaNhanVien == id).SingleOrDefault();
+                string MatKhauMoi = txtMatKhauMoi.Text;
+                tk.MatKhau = MatKhauMoi;
+                db.Entry(tk).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+                MessageBox.Show("Thay đổi mật khẩu thành công");
+                this.DialogResult = DialogResult.Cancel;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
         }
 
         private void bttkhong_Click(object sender, EventArgs e)
         {
-            
+            txtMatKhauMoi.Text = "";
+            txtMatKhauXacNhan.Text = "";
+            this.DialogResult = DialogResult.Cancel;
         }
 
         private void frmDoiMatKhau_Load(object sender, EventArgs e)
         {
-           
-           
-
+            int MaNV = ma;
+            QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+            tblTaiKhoan tk = db.tblTaiKhoans.Where(t => t.MaNhanVien == MaNV).SingleOrDefault();
+            txtTenNguoiDung.Text = tk.tblNhanVien.TenNhanVien.ToString();
+            txtTenDangNhap.Text = tk.TenTaiKhoan.ToString();
         }
 
 

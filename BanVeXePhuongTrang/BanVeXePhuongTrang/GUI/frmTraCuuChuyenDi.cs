@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BanVeXePhuongTrang.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,18 +37,46 @@ namespace BanVeXePhuongTrang.GUI
            
         }
 
-        private void cbSanBayDen_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbBenXeDen_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            //if (!cbBenXeDen.Text.Equals(""))
+            //{
+            //    DataRow[] row = DSSanBay.Select("MaSanBay='" + cbSanBayDen.Text + "'");
+
+            //    txtTenSanBayDen.Text = row[0].ItemArray[(int)Support.BLL.Support.IDSanBay.TenSanBay].ToString();
+            //}
         }
 
-        private void cbSanBayDi_MouseClick(object sender, MouseEventArgs e)
+        private void cbBenXeDi_MouseClick(object sender, MouseEventArgs e)
         {
+            try{
+                cbBenXeDi.Items.Clear();
+                txtTenBenXeDi.Text = "";
+                
+            }
+            catch { }
         }
 
-        private void cbSanBayDen_MouseClick(object sender, MouseEventArgs e)
+        private void cbBenXeDen_MouseClick(object sender, MouseEventArgs e)
         {
-           
+            try {
+                cbBenXeDen.Items.Clear();
+                txtTenBenXeDen.Text = "";
+                //QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+                //cbBenXeDi.DataSource = db.tblBenXes.Select(t => t.TenBenXe).ToList();
+            }
+            catch { }
+        }
+
+        private void frmTraCuuChuyenDi_Load(object sender, EventArgs e)
+        {
+            try { 
+            QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+            cbBenXeDi.DataSource = db.tblBenXes.Select(t => t.TenBenXe).ToList();
+            cbBenXeDen.Items.Clear();           
+            cbBenXeDi.DataSource = db.tblBenXes.Select(t => t.TenBenXe).ToList();
+            }
+            catch { }
         }
     }
 }

@@ -34,7 +34,9 @@
             this.txtTenBenXeDi = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
+            this.btThoat = new DevComponents.DotNetBar.ButtonX();
             this.cbBenXeDi = new System.Windows.Forms.ComboBox();
+            this.btnTim = new DevComponents.DotNetBar.ButtonX();
             this.cbBenXeDen = new System.Windows.Forms.ComboBox();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label5 = new System.Windows.Forms.Label();
@@ -42,6 +44,7 @@
             this.dtpDenNgay = new System.Windows.Forms.DateTimePicker();
             this.dtpTuNgay = new System.Windows.Forms.DateTimePicker();
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.BenXeDi = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
@@ -50,14 +53,11 @@
             this.ThoiGian = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.SoGheTrong = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.SoGheDat = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
-            this.btThoat = new DevComponents.DotNetBar.ButtonX();
-            this.btnTim = new DevComponents.DotNetBar.ButtonX();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelEx1.SuspendLayout();
             this.groupPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelEx1
@@ -168,6 +168,21 @@
             this.Label3.TabIndex = 38;
             this.Label3.Text = "Bến Xe Đến:";
             // 
+            // btThoat
+            // 
+            this.btThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btThoat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btThoat.Image = global::BanVeXePhuongTrang.Properties.Resources.Windows_Close_Program_icon;
+            this.btThoat.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btThoat.Location = new System.Drawing.Point(250, 254);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(88, 37);
+            this.btThoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btThoat.TabIndex = 74;
+            this.btThoat.Text = "Thoát";
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            // 
             // cbBenXeDi
             // 
             this.cbBenXeDi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -178,7 +193,22 @@
             this.cbBenXeDi.Size = new System.Drawing.Size(87, 25);
             this.cbBenXeDi.TabIndex = 40;
             this.cbBenXeDi.SelectedIndexChanged += new System.EventHandler(this.cbSanBayDi_SelectedIndexChanged);
-            this.cbBenXeDi.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbSanBayDi_MouseClick);
+            this.cbBenXeDi.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbBenXeDi_MouseClick);
+            // 
+            // btnTim
+            // 
+            this.btnTim.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnTim.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnTim.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTim.Image = global::BanVeXePhuongTrang.Properties.Resources.Zoom_icon;
+            this.btnTim.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnTim.Location = new System.Drawing.Point(97, 254);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(82, 37);
+            this.btnTim.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnTim.TabIndex = 75;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // cbBenXeDen
             // 
@@ -189,8 +219,8 @@
             this.cbBenXeDen.Name = "cbBenXeDen";
             this.cbBenXeDen.Size = new System.Drawing.Size(87, 25);
             this.cbBenXeDen.TabIndex = 41;
-            this.cbBenXeDen.SelectedIndexChanged += new System.EventHandler(this.cbSanBayDen_SelectedIndexChanged);
-            this.cbBenXeDen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbSanBayDen_MouseClick);
+            this.cbBenXeDen.SelectedIndexChanged += new System.EventHandler(this.cbBenXeDen_SelectedIndexChanged);
+            this.cbBenXeDen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbBenXeDen_MouseClick);
             // 
             // Label4
             // 
@@ -248,6 +278,16 @@
             this.reflectionLabel1.TabIndex = 76;
             this.reflectionLabel1.Text = "<b><font size=\"+6\"><i></i><font color=\"#B02B2C\">TRA CỨU CHUYẾN ĐI</font></font></" +
     "b>";
+            // 
+            // PictureBox1
+            // 
+            this.PictureBox1.Image = global::BanVeXePhuongTrang.Properties.Resources.xe_phuong_trang_3;
+            this.PictureBox1.Location = new System.Drawing.Point(121, 24);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(88, 56);
+            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox1.TabIndex = 53;
+            this.PictureBox1.TabStop = false;
             // 
             // groupPanel2
             // 
@@ -375,46 +415,6 @@
             this.SoGheDat.HeaderText = "Số Ghế Đặt";
             this.SoGheDat.Name = "SoGheDat";
             // 
-            // btThoat
-            // 
-            this.btThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btThoat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btThoat.Image = global::BanVeXePhuongTrang.Properties.Resources.Windows_Close_Program_icon;
-            this.btThoat.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btThoat.Location = new System.Drawing.Point(250, 254);
-            this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(88, 37);
-            this.btThoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btThoat.TabIndex = 74;
-            this.btThoat.Text = "Thoát";
-            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
-            // 
-            // btnTim
-            // 
-            this.btnTim.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnTim.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnTim.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTim.Image = global::BanVeXePhuongTrang.Properties.Resources.Zoom_icon;
-            this.btnTim.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnTim.Location = new System.Drawing.Point(97, 254);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(82, 37);
-            this.btnTim.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnTim.TabIndex = 75;
-            this.btnTim.Text = "Tìm";
-            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
-            // 
-            // PictureBox1
-            // 
-            this.PictureBox1.Image = global::BanVeXePhuongTrang.Properties.Resources.xe_phuong_trang_3;
-            this.PictureBox1.Location = new System.Drawing.Point(121, 24);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(88, 56);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox1.TabIndex = 53;
-            this.PictureBox1.TabStop = false;
-            // 
             // frmTraCuuChuyenDi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -423,12 +423,13 @@
             this.Controls.Add(this.panelEx1);
             this.Name = "frmTraCuuChuyenDi";
             this.Text = "Tra Cứu Chuyến Đi";
+            this.Load += new System.EventHandler(this.frmTraCuuChuyenDi_Load);
             this.panelEx1.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.groupPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

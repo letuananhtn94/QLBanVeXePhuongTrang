@@ -24,7 +24,7 @@ namespace BanVeXePhuongTrang.GUI
 
             foreach (var item in new QUANLYXEKHACHEntities().tblBenXes.ToList())
             {
-                cbTenBenXe.Items.Add(item.TenBenXe);
+                cbTenBenXe.Items.Add(item.TenBenXe);    
             }
         }
 

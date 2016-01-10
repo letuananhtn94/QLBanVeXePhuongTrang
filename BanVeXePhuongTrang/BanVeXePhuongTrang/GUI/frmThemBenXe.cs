@@ -25,6 +25,7 @@ namespace BanVeXePhuongTrang.GUI
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            try { 
             BLL_BenXe temp = new BLL_BenXe();
             if (temp.canInsert(txtMaBenXe.Text.ToString(), txtTenBenXe.Text.ToString()))
             {
@@ -43,6 +44,8 @@ namespace BanVeXePhuongTrang.GUI
             {
                 MessageBox.Show("Không thành công");
             }
+            }
+            catch { }
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)

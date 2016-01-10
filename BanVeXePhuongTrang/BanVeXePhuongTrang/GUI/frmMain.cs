@@ -4,16 +4,18 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Linq;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
 using BanVeXePhuongTrang.GUI;
+using BanVeXePhuongTrang.DAL;
 
 namespace BanVeXePhuongTrang
 {
     public partial class frmMain : DevComponents.DotNetBar.Office2007RibbonForm
     {
         static public string TenDangNhap;
-        static public string MaNhanVien;
+        static public int MaNhanVien;
 
         public static DevComponents.DotNetBar.TabControl  m_Tab;
         public frmMain()
@@ -23,7 +25,7 @@ namespace BanVeXePhuongTrang
 
         #region truyền tham số từ form con
 
-        string ma;
+        int ma;
         public void laydulieu()
         {
             lbTenDangNhap.Text = TenDangNhap;
@@ -63,11 +65,9 @@ namespace BanVeXePhuongTrang
             lbthoigian.Text = Convert.ToDateTime(DateTime.Today).ToString("dd/MM/yyyy");
 
 
-           // frmDangNhap f = new frmDangNhap();
-            
-            //f.truyendulieu = new frmDangNhap.TruyenLaiDuLieu(laydulieu);
-           // f.ShowDialog();
-            laydulieu();
+            //frmDangNhap f = new frmDangNhap();          
+            //f.ShowDialog();
+            //laydulieu();
              
             if (lbTenDangNhap.Text.Equals("Chưa đăng nhập"))
             {
@@ -146,7 +146,29 @@ namespace BanVeXePhuongTrang
         }
         public void XuLyQuyenHan()
         {
-           
+            try {
+                QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+                tblTaiKhoan tk = new tblTaiKhoan();
+                tk = db.tblTaiKhoans.Where(t => t.MaNhanVien == MaNhanVien).SingleOrDefault();
+
+                if (tk != null)
+                {
+                    if (tk.MaQuyen == 1)
+                    {
+                        BatTatQTV();
+                    }
+                    else if (tk.MaQuyen == 2)
+                    {
+                        BatTatNV();
+                    }
+                    else
+                    {
+                        BatTatBGD();
+                    }
+
+                }
+            }
+            catch { }
         }
         #endregion
 

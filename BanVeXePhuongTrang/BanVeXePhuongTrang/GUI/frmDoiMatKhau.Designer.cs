@@ -128,6 +128,7 @@
             this.txtMatKhauXacNhan.TabIndex = 51;
             this.txtMatKhauXacNhan.UseSystemPasswordChar = true;
             this.txtMatKhauXacNhan.WatermarkText = "Nhập mật khẩu xác nhận";
+            this.txtMatKhauXacNhan.Validating += new System.ComponentModel.CancelEventHandler(this.txtMatKhauXacNhan_Validating_1);
             // 
             // txtMatKhauMoi
             // 
@@ -144,6 +145,7 @@
             this.txtMatKhauMoi.TabIndex = 50;
             this.txtMatKhauMoi.UseSystemPasswordChar = true;
             this.txtMatKhauMoi.WatermarkText = "Nhập mật khẩu mới";
+            this.txtMatKhauMoi.Validating += new System.ComponentModel.CancelEventHandler(this.txtMatKhauNew_Validating_1);
             // 
             // txtTenDangNhap
             // 

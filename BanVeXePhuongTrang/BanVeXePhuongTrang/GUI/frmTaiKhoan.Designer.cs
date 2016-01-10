@@ -37,12 +37,7 @@
             this.txtMatKhau = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtTenDangNhap = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
-            this.dtNhanVien = new System.Windows.Forms.DataGridView();
-            this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenDangNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuyenHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTaiKhoan = new System.Windows.Forms.DataGridView();
             this.dockContainerItem2 = new DevComponents.DotNetBar.DockContainerItem();
             this.panelDockContainer2 = new DevComponents.DotNetBar.PanelDockContainer();
             this.label2 = new System.Windows.Forms.Label();
@@ -70,7 +65,12 @@
             this.txtMaNhanVien = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.dockContainerItem1 = new DevComponents.DotNetBar.DockContainerItem();
             this.dockSite6 = new DevComponents.DotNetBar.DockSite();
-            ((System.ComponentModel.ISupportInitialize)(this.dtNhanVien)).BeginInit();
+            this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDangNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QuyenHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).BeginInit();
             this.panelDockContainer2.SuspendLayout();
             this.dockSite3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar2)).BeginInit();
@@ -183,14 +183,14 @@
             this.labelX5.TabIndex = 17;
             this.labelX5.Text = "Tên đăng nhập";
             // 
-            // dtNhanVien
+            // dgvTaiKhoan
             // 
-            this.dtNhanVien.AllowUserToAddRows = false;
-            this.dtNhanVien.AllowUserToDeleteRows = false;
-            this.dtNhanVien.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dtNhanVien.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dtNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dtNhanVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dgvTaiKhoan.AllowUserToAddRows = false;
+            this.dgvTaiKhoan.AllowUserToDeleteRows = false;
+            this.dgvTaiKhoan.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvTaiKhoan.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dgvTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvTaiKhoan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -199,66 +199,25 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvTaiKhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTaiKhoan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNhanVien,
             this.TenNhanVien,
             this.TenDangNhap,
             this.MatKhau,
             this.QuyenHan});
-            this.dtNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtNhanVien.GridColor = System.Drawing.SystemColors.Control;
-            this.dtNhanVien.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.dtNhanVien.Location = new System.Drawing.Point(0, 65);
-            this.dtNhanVien.Name = "dtNhanVien";
-            this.dtNhanVien.ReadOnly = true;
-            this.dtNhanVien.RowHeadersVisible = false;
-            this.dtNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtNhanVien.Size = new System.Drawing.Size(430, 386);
-            this.dtNhanVien.TabIndex = 35;
-            // 
-            // MaNhanVien
-            // 
-            this.MaNhanVien.DataPropertyName = "MaNhanVien";
-            this.MaNhanVien.HeaderText = "Mã NV";
-            this.MaNhanVien.Name = "MaNhanVien";
-            this.MaNhanVien.ReadOnly = true;
-            this.MaNhanVien.Visible = false;
-            this.MaNhanVien.Width = 135;
-            // 
-            // TenNhanVien
-            // 
-            this.TenNhanVien.DataPropertyName = "TenNhanVien";
-            this.TenNhanVien.HeaderText = "Tên nhân viên";
-            this.TenNhanVien.Name = "TenNhanVien";
-            this.TenNhanVien.ReadOnly = true;
-            this.TenNhanVien.Width = 135;
-            // 
-            // TenDangNhap
-            // 
-            this.TenDangNhap.DataPropertyName = "TenDangNhap";
-            this.TenDangNhap.HeaderText = "Tên đăng nhập";
-            this.TenDangNhap.Name = "TenDangNhap";
-            this.TenDangNhap.ReadOnly = true;
-            this.TenDangNhap.Width = 135;
-            // 
-            // MatKhau
-            // 
-            this.MatKhau.DataPropertyName = "MatKhau";
-            this.MatKhau.HeaderText = "Mật khẩu";
-            this.MatKhau.Name = "MatKhau";
-            this.MatKhau.ReadOnly = true;
-            this.MatKhau.Visible = false;
-            this.MatKhau.Width = 135;
-            // 
-            // QuyenHan
-            // 
-            this.QuyenHan.DataPropertyName = "QuyenHan";
-            this.QuyenHan.HeaderText = "Quyền hạn";
-            this.QuyenHan.Name = "QuyenHan";
-            this.QuyenHan.ReadOnly = true;
-            this.QuyenHan.Width = 135;
+            this.dgvTaiKhoan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTaiKhoan.GridColor = System.Drawing.SystemColors.Control;
+            this.dgvTaiKhoan.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.dgvTaiKhoan.Location = new System.Drawing.Point(0, 65);
+            this.dgvTaiKhoan.Name = "dgvTaiKhoan";
+            this.dgvTaiKhoan.ReadOnly = true;
+            this.dgvTaiKhoan.RowHeadersVisible = false;
+            this.dgvTaiKhoan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTaiKhoan.Size = new System.Drawing.Size(430, 386);
+            this.dgvTaiKhoan.TabIndex = 35;
+            this.dgvTaiKhoan.Click += new System.EventHandler(this.dgvTaiKhoan_Click);
             // 
             // dockContainerItem2
             // 
@@ -379,7 +338,7 @@
             this.bar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2003;
             this.bar2.TabIndex = 0;
             this.bar2.TabStop = false;
-            this.bar2.Text = "Tìm kiếm nhân viên";
+            this.bar2.Text = "Tìm kiếm tài khoản";
             // 
             // txtTenNhanVien
             // 
@@ -393,6 +352,7 @@
             this.txtTenNhanVien.ForeColor = System.Drawing.Color.Black;
             this.txtTenNhanVien.Location = new System.Drawing.Point(10, 66);
             this.txtTenNhanVien.Name = "txtTenNhanVien";
+            this.txtTenNhanVien.ReadOnly = true;
             this.txtTenNhanVien.Size = new System.Drawing.Size(278, 20);
             this.txtTenNhanVien.TabIndex = 2;
             this.txtTenNhanVien.WatermarkFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -556,6 +516,7 @@
             this.btThemMoi.Size = new System.Drawing.Size(90, 29);
             this.btThemMoi.TabIndex = 13;
             this.btThemMoi.Text = "Thêm mới";
+            this.btThemMoi.Click += new System.EventHandler(this.btkhong_Click);
             // 
             // btluu
             // 
@@ -569,6 +530,7 @@
             this.btluu.Size = new System.Drawing.Size(68, 29);
             this.btluu.TabIndex = 8;
             this.btluu.Text = "Lưu";
+            this.btluu.Click += new System.EventHandler(this.btCapNhat_Click);
             // 
             // btThoat
             // 
@@ -582,6 +544,7 @@
             this.btThoat.Size = new System.Drawing.Size(81, 29);
             this.btThoat.TabIndex = 7;
             this.btThoat.Text = "Thoát";
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // btxoa
             // 
@@ -595,6 +558,7 @@
             this.btxoa.Size = new System.Drawing.Size(61, 29);
             this.btxoa.TabIndex = 7;
             this.btxoa.Text = "Xóa";
+            this.btxoa.Click += new System.EventHandler(this.btxoa_Click);
             // 
             // btthem
             // 
@@ -609,6 +573,7 @@
             this.btthem.Size = new System.Drawing.Size(72, 29);
             this.btthem.TabIndex = 6;
             this.btthem.Text = "Thêm";
+            this.btthem.Click += new System.EventHandler(this.btthem_Click);
             // 
             // txtMaNhanVien
             // 
@@ -622,6 +587,7 @@
             this.txtMaNhanVien.ForeColor = System.Drawing.Color.Silver;
             this.txtMaNhanVien.Location = new System.Drawing.Point(10, 22);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
+            this.txtMaNhanVien.ReadOnly = true;
             this.txtMaNhanVien.Size = new System.Drawing.Size(278, 20);
             this.txtMaNhanVien.TabIndex = 0;
             this.txtMaNhanVien.WatermarkFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -643,12 +609,52 @@
             this.dockSite6.TabIndex = 32;
             this.dockSite6.TabStop = false;
             // 
+            // MaNhanVien
+            // 
+            this.MaNhanVien.DataPropertyName = "MaNhanVien";
+            this.MaNhanVien.HeaderText = "Mã NV";
+            this.MaNhanVien.Name = "MaNhanVien";
+            this.MaNhanVien.ReadOnly = true;
+            this.MaNhanVien.Width = 135;
+            // 
+            // TenNhanVien
+            // 
+            this.TenNhanVien.DataPropertyName = "TenNhanVien";
+            this.TenNhanVien.HeaderText = "Tên nhân viên";
+            this.TenNhanVien.Name = "TenNhanVien";
+            this.TenNhanVien.ReadOnly = true;
+            this.TenNhanVien.Width = 135;
+            // 
+            // TenDangNhap
+            // 
+            this.TenDangNhap.DataPropertyName = "TenDangNhap";
+            this.TenDangNhap.HeaderText = "Tên đăng nhập";
+            this.TenDangNhap.Name = "TenDangNhap";
+            this.TenDangNhap.ReadOnly = true;
+            this.TenDangNhap.Width = 135;
+            // 
+            // MatKhau
+            // 
+            this.MatKhau.DataPropertyName = "MatKhau";
+            this.MatKhau.HeaderText = "Mật khẩu";
+            this.MatKhau.Name = "MatKhau";
+            this.MatKhau.ReadOnly = true;
+            this.MatKhau.Width = 135;
+            // 
+            // QuyenHan
+            // 
+            this.QuyenHan.DataPropertyName = "QuyenHan";
+            this.QuyenHan.HeaderText = "Quyền hạn";
+            this.QuyenHan.Name = "QuyenHan";
+            this.QuyenHan.ReadOnly = true;
+            this.QuyenHan.Width = 135;
+            // 
             // frmTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 451);
-            this.Controls.Add(this.dtNhanVien);
+            this.Controls.Add(this.dgvTaiKhoan);
             this.Controls.Add(this.dockSite7);
             this.Controls.Add(this.dockSite3);
             this.Controls.Add(this.dockSite4);
@@ -659,7 +665,7 @@
             this.Controls.Add(this.dockSite6);
             this.Name = "frmTaiKhoan";
             this.Text = "Quản lý tài khoản";
-            ((System.ComponentModel.ISupportInitialize)(this.dtNhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).EndInit();
             this.panelDockContainer2.ResumeLayout(false);
             this.panelDockContainer2.PerformLayout();
             this.dockSite3.ResumeLayout(false);
@@ -682,7 +688,7 @@
         private DevComponents.DotNetBar.Controls.TextBoxX txtMatKhau;
         private DevComponents.DotNetBar.Controls.TextBoxX txtTenDangNhap;
         private DevComponents.DotNetBar.LabelX labelX5;
-        private System.Windows.Forms.DataGridView dtNhanVien;
+        private System.Windows.Forms.DataGridView dgvTaiKhoan;
         private DevComponents.DotNetBar.DockContainerItem dockContainerItem2;
         private DevComponents.DotNetBar.PanelDockContainer panelDockContainer2;
         private System.Windows.Forms.Label label2;
