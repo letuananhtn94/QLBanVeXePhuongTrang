@@ -30,28 +30,44 @@ namespace BanVeXePhuongTrang.GUI
 
         private void btnTim_Click(object sender, EventArgs e)
         {
+            QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+            try
+            {
+                this.dgvTraCuu.AutoGenerateColumns = false;
+                dgvTraCuu.Rows.Clear();
+                foreach (var item in db.tblChuyenDis.ToList())
+                {                                   
+                    dgvTraCuu.Rows.Add(item.tblXeKhach.tblTuyenXe.MaBenXeDi,
+                                            item.tblXeKhach.tblTuyenXe.MaBenXeDen,
+                                            item.KhoiHanh,
+                                            item.KetThuc,
+                                            item.SoGheDat,
+                                            item.SoGheTrong                                          
+                                            );
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
         }
 
-        private void cbSanBayDi_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbBenXeDi_SelectedIndexChanged(object sender, EventArgs e)
         {
            
         }
 
         private void cbBenXeDen_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if (!cbBenXeDen.Text.Equals(""))
-            //{
-            //    DataRow[] row = DSSanBay.Select("MaSanBay='" + cbSanBayDen.Text + "'");
-
-            //    txtTenSanBayDen.Text = row[0].ItemArray[(int)Support.BLL.Support.IDSanBay.TenSanBay].ToString();
-            //}
+          
         }
 
         private void cbBenXeDi_MouseClick(object sender, MouseEventArgs e)
         {
             try{
                 cbBenXeDi.Items.Clear();
-                txtTenBenXeDi.Text = "";
+               
                 
             }
             catch { }
@@ -61,7 +77,7 @@ namespace BanVeXePhuongTrang.GUI
         {
             try {
                 cbBenXeDen.Items.Clear();
-                txtTenBenXeDen.Text = "";
+                
                 //QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
                 //cbBenXeDi.DataSource = db.tblBenXes.Select(t => t.TenBenXe).ToList();
             }
@@ -74,7 +90,7 @@ namespace BanVeXePhuongTrang.GUI
             QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
             cbBenXeDi.DataSource = db.tblBenXes.Select(t => t.TenBenXe).ToList();
             cbBenXeDen.Items.Clear();           
-            cbBenXeDi.DataSource = db.tblBenXes.Select(t => t.TenBenXe).ToList();
+            cbBenXeDen.DataSource = db.tblBenXes.Select(t => t.TenBenXe).ToList();
             }
             catch { }
         }

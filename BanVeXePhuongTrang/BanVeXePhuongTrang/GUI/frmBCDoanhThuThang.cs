@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BanVeXePhuongTrang;
+using Microsoft.Reporting.WinForms;
 
 namespace BanVeXePhuongTrang.GUI
 {
@@ -15,12 +16,7 @@ namespace BanVeXePhuongTrang.GUI
     {
         public frmBCDoanhThuThang()
         {
-            InitializeComponent();
-            for (int i = 0; i < 20; i++)
-            {
-                int n = 2010 + i;
-                cbNam.Items.Add(n);
-            }
+            InitializeComponent();            
         }
 
         private void btThoat_Click(object sender, EventArgs e)
@@ -32,7 +28,40 @@ namespace BanVeXePhuongTrang.GUI
 
         private void btBaoCao_Click(object sender, EventArgs e)
         {
-            
+            SetParammater();
+            reportViewer1.RefreshReport();
         }
+
+        private void frmBCDoanhThuThang_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'qUANLYXEKHACHDataSet1.tblBaoCaoDoanhThuThang' table. You can move, or remove it, as needed.
+            //this.tblBaoCaoDoanhThuThangTableAdapter.Fill(this.qUANLYXEKHACHDataSet1.tblBaoCaoDoanhThuThang);
+            // TODO: This line of code loads data into the 'qUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThang' table. You can move, or remove it, as needed.
+            this.tblBaoCaoDoanhThuThangTableAdapter.Fill(this.qUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThang);
+            // TODO: This line of code loads data into the 'qUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThang' table. You can move, or remove it, as needed.
+
+            for (int i = 1; i < 13; i++)
+            {
+                cbThang.Items.Add(i);
+            }
+            for (int i = 1990; i < DateTime.Now.Year; i++)
+            {
+                cbNam.Items.Add(i);
+            }
+
+            SetParammater();
+            reportViewer1.RefreshReport();
+        }
+
+        void SetParammater() {
+            ReportParameter[] param = new ReportParameter[2];
+            param[0] = new ReportParameter("Thang");
+            param[0].Values.Add(cbThang.SelectedItem.ToString());
+            param[1] = new ReportParameter("Nam");
+            param[1].Values.Add(cbNam.SelectedItem.ToString());
+
+            reportViewer1.LocalReport.SetParameters(param);
+        }
+
     }
 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BanVeXePhuongTrang.BLL;
+using BanVeXePhuongTrang.DAL;
 
 namespace BanVeXePhuongTrang.GUI
 {
@@ -29,21 +31,30 @@ namespace BanVeXePhuongTrang.GUI
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            if(cbMaTuyenBay.Text.Equals(""))
+            if(cbMaTuyen.Text.Equals(""))
             {
                 MessageBox.Show("Vui lòng chọn tuyến bay muốn xóa", "Lỗi");
                 return;
             }
 
-            XoaTuyenBay(cbMaTuyenBay.Text);
-
-            MessageBox.Show("Xóa thành công", "Thông báo");
-            cbMaTuyenBay.Text = "";
+            QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+            BLL_TuyenXe temp = new BLL_TuyenXe();
+            if(temp.canDelete(cbMaTuyen.SelectedItem.ToString()))
+            {
+                tblTuyenXe tuyenXe = db.tblTuyenXes.Where(t => t.MaTuyen == cbMaTuyen.SelectedItem.ToString()).Single();
+                db.tblTuyenXes.Remove(tuyenXe);
+                db.SaveChanges();
+                MessageBox.Show("Xóa thành công", "Thông báo");
+            }
+            else
+                MessageBox.Show("Tuyến không tồn tại", "Thông báo");
         }
 
-        private void cbMaTuyenBay_MouseClick(object sender, MouseEventArgs e)
+        private void frmXoaTuyenXe_Load(object sender, EventArgs e)
         {
-           
+            cbMaTuyen.Items.Clear();
+            foreach (var item in new QUANLYXEKHACHEntities().tblTuyenXes.ToList())
+                cbMaTuyen.Items.Add(item.MaTuyen);
         }
     }
 }

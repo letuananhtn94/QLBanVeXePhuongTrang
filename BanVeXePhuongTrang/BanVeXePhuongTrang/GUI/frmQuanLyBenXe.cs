@@ -53,8 +53,6 @@ namespace BanVeXePhuongTrang.GUI
         {
             frmThemBenXe form = new frmThemBenXe();
             form.Show();
-
-           
         }
 
         private void buttonX1_Click(object sender, EventArgs e)

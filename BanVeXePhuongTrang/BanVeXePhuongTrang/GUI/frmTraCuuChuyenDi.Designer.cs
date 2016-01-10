@@ -30,8 +30,6 @@
         {
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.txtTenBenXeDen = new System.Windows.Forms.TextBox();
-            this.txtTenBenXeDi = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.btThoat = new DevComponents.DotNetBar.ButtonX();
@@ -46,7 +44,7 @@
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvTraCuu = new System.Windows.Forms.DataGridView();
             this.BenXeDi = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.BenXeDen = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.KhoiHanh = new DevComponents.DotNetBar.Controls.DataGridViewDateTimeInputColumn();
@@ -57,7 +55,7 @@
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.groupPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTraCuu)).BeginInit();
             this.SuspendLayout();
             // 
             // panelEx1
@@ -86,8 +84,6 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.txtTenBenXeDen);
-            this.groupPanel1.Controls.Add(this.txtTenBenXeDi);
             this.groupPanel1.Controls.Add(this.Label2);
             this.groupPanel1.Controls.Add(this.Label3);
             this.groupPanel1.Controls.Add(this.btThoat);
@@ -134,22 +130,6 @@
             this.groupPanel1.TabIndex = 78;
             this.groupPanel1.Text = "Tìm kiếm";
             // 
-            // txtTenBenXeDen
-            // 
-            this.txtTenBenXeDen.Location = new System.Drawing.Point(235, 69);
-            this.txtTenBenXeDen.Name = "txtTenBenXeDen";
-            this.txtTenBenXeDen.ReadOnly = true;
-            this.txtTenBenXeDen.Size = new System.Drawing.Size(187, 20);
-            this.txtTenBenXeDen.TabIndex = 77;
-            // 
-            // txtTenBenXeDi
-            // 
-            this.txtTenBenXeDi.Location = new System.Drawing.Point(235, 28);
-            this.txtTenBenXeDi.Name = "txtTenBenXeDi";
-            this.txtTenBenXeDi.ReadOnly = true;
-            this.txtTenBenXeDi.Size = new System.Drawing.Size(187, 20);
-            this.txtTenBenXeDi.TabIndex = 76;
-            // 
             // Label2
             // 
             this.Label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -190,9 +170,9 @@
             this.cbBenXeDi.ForeColor = System.Drawing.Color.Blue;
             this.cbBenXeDi.Location = new System.Drawing.Point(140, 26);
             this.cbBenXeDi.Name = "cbBenXeDi";
-            this.cbBenXeDi.Size = new System.Drawing.Size(87, 25);
+            this.cbBenXeDi.Size = new System.Drawing.Size(235, 25);
             this.cbBenXeDi.TabIndex = 40;
-            this.cbBenXeDi.SelectedIndexChanged += new System.EventHandler(this.cbSanBayDi_SelectedIndexChanged);
+            this.cbBenXeDi.SelectedIndexChanged += new System.EventHandler(this.cbBenXeDi_SelectedIndexChanged);
             this.cbBenXeDi.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbBenXeDi_MouseClick);
             // 
             // btnTim
@@ -217,7 +197,7 @@
             this.cbBenXeDen.ForeColor = System.Drawing.Color.Blue;
             this.cbBenXeDen.Location = new System.Drawing.Point(140, 66);
             this.cbBenXeDen.Name = "cbBenXeDen";
-            this.cbBenXeDen.Size = new System.Drawing.Size(87, 25);
+            this.cbBenXeDen.Size = new System.Drawing.Size(235, 25);
             this.cbBenXeDen.TabIndex = 41;
             this.cbBenXeDen.SelectedIndexChanged += new System.EventHandler(this.cbBenXeDen_SelectedIndexChanged);
             this.cbBenXeDen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbBenXeDen_MouseClick);
@@ -293,7 +273,7 @@
             // 
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel2.Controls.Add(this.dataGridView1);
+            this.groupPanel2.Controls.Add(this.dgvTraCuu);
             this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel2.Location = new System.Drawing.Point(12, 93);
             this.groupPanel2.Name = "groupPanel2";
@@ -329,30 +309,32 @@
             this.groupPanel2.TabIndex = 79;
             this.groupPanel2.Text = "Danh sách chuyến đi";
             // 
-            // dataGridView1
+            // dgvTraCuu
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvTraCuu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTraCuu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.BenXeDi,
             this.BenXeDen,
             this.KhoiHanh,
             this.ThoiGian,
             this.SoGheTrong,
             this.SoGheDat});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(723, 359);
-            this.dataGridView1.TabIndex = 77;
+            this.dgvTraCuu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTraCuu.Location = new System.Drawing.Point(0, 0);
+            this.dgvTraCuu.Name = "dgvTraCuu";
+            this.dgvTraCuu.Size = new System.Drawing.Size(723, 359);
+            this.dgvTraCuu.TabIndex = 77;
             // 
             // BenXeDi
             // 
+            this.BenXeDi.DataPropertyName = "BenXeDi";
             this.BenXeDi.HeaderText = "Bến Xe Đi";
             this.BenXeDi.Name = "BenXeDi";
             this.BenXeDi.Width = 170;
             // 
             // BenXeDen
             // 
+            this.BenXeDen.DataPropertyName = "BenXeDen";
             this.BenXeDen.HeaderText = "Bến Xe Đến";
             this.BenXeDen.Name = "BenXeDen";
             this.BenXeDen.Width = 170;
@@ -371,6 +353,7 @@
             this.KhoiHanh.ButtonCustom2.Tooltip = "";
             this.KhoiHanh.ButtonDropDown.Tooltip = "";
             this.KhoiHanh.ButtonFreeText.Tooltip = "";
+            this.KhoiHanh.DataPropertyName = "KhoiHanh";
             this.KhoiHanh.HeaderText = "Khởi Hành";
             this.KhoiHanh.InputHorizontalAlignment = DevComponents.Editors.eHorizontalAlignment.Left;
             // 
@@ -399,12 +382,14 @@
             // 
             // ThoiGian
             // 
-            this.ThoiGian.HeaderText = "Thời Gian";
+            this.ThoiGian.DataPropertyName = "KetThuc";
+            this.ThoiGian.HeaderText = "Kết Thúc";
             this.ThoiGian.Name = "ThoiGian";
             this.ThoiGian.Width = 60;
             // 
             // SoGheTrong
             // 
+            this.SoGheTrong.DataPropertyName = "SoGheTrong";
             this.SoGheTrong.HeaderText = "Số Ghế Trống";
             this.SoGheTrong.Name = "SoGheTrong";
             this.SoGheTrong.Width = 80;
@@ -412,6 +397,7 @@
             // SoGheDat
             // 
             this.SoGheDat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SoGheDat.DataPropertyName = "SoGheDat";
             this.SoGheDat.HeaderText = "Số Ghế Đặt";
             this.SoGheDat.Name = "SoGheDat";
             // 
@@ -426,10 +412,9 @@
             this.Load += new System.EventHandler(this.frmTraCuuChuyenDi_Load);
             this.panelEx1.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
-            this.groupPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.groupPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTraCuu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -450,11 +435,9 @@
         private DevComponents.DotNetBar.ButtonX btnTim;
         private DevComponents.DotNetBar.ButtonX btThoat;
         private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvTraCuu;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
-        private System.Windows.Forms.TextBox txtTenBenXeDen;
-        private System.Windows.Forms.TextBox txtTenBenXeDi;
         private DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn BenXeDi;
         private DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn BenXeDen;
         private DevComponents.DotNetBar.Controls.DataGridViewDateTimeInputColumn KhoiHanh;

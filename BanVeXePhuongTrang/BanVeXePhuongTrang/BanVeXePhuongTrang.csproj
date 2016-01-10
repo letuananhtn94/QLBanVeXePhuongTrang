@@ -86,11 +86,14 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -104,6 +107,9 @@
     <Compile Include="BLL\BLL_BenXe.cs" />
     <Compile Include="BLL\BLL_NhanVien.cs" />
     <Compile Include="BLL\BLL_TaiKhoan.cs" />
+    <Compile Include="BLL\BLL_TuyenXe.cs" />
+    <Compile Include="BLL\BLL_XeKhach.cs" />
+    <Compile Include="BLL\BLL_XeTrungChuyen.cs" />
     <Compile Include="DAL\Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -352,6 +358,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUANLYXEKHACHDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYXEKHACHDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\frmBCDoanhThuNam.resx">
       <DependentUpon>frmBCDoanhThuNam.cs</DependentUpon>
     </EmbeddedResource>
@@ -442,6 +453,7 @@
     <EmbeddedResource Include="GUI\frmTaiKhoan.resx">
       <DependentUpon>frmTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Report1.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -484,6 +496,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QUANLYXEKHACHDataSet.xsc">
+      <DependentUpon>QUANLYXEKHACHDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYXEKHACHDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYXEKHACHDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYXEKHACHDataSet.xss">
+      <DependentUpon>QUANLYXEKHACHDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\Actions-edit-delete-icon.png" />
   </ItemGroup>
   <ItemGroup>

@@ -13,16 +13,7 @@ namespace BanVeXePhuongTrang.GUI
 {
     public partial class frmVeXe : Form
     {
-        DataTable DSSanBay;
-        DataTable DSTuyenBay;
-        DataTable DSHangVe;
-        DataTable DSCTGhe;
-
-        String MaSanBayDi = "";
-        String MaSanBayDen = "";
-        int DonGia;
-
-     
+       
         public frmVeXe()
         {
             InitializeComponent();
