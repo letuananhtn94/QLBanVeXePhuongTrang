@@ -390,8 +390,15 @@ namespace BanVeXePhuongTrang
         }
 
         private void btThoat_Click(object sender, EventArgs e)
-        {   
-               this.Close();
+        {
+
+            for (int i = 0; i < m_Tab.Tabs.Count; i++)
+            {
+                m_Tab.Tabs.RemoveAt(i);
+                i--;
+            }
+
+            this.Close();
         }
 
         private void btnNhanLich_Click(object sender, EventArgs e)

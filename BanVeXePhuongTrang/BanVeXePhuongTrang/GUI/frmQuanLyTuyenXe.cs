@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BanVeXePhuongTrang.DAL;
 
 namespace BanVeXePhuongTrang.GUI
 {
@@ -15,12 +16,6 @@ namespace BanVeXePhuongTrang.GUI
         public frmQuanLyTuyenXe()
         {
             InitializeComponent();
-            LoadDanhSachTuyenBay();
-        }
-
-        void LoadDanhSachTuyenBay()
-        {
-            
         }
 
         private void btThoat_Click(object sender, EventArgs e)
@@ -45,7 +40,14 @@ namespace BanVeXePhuongTrang.GUI
       
         private void buttonX1_Click(object sender, EventArgs e)
         {
-            LoadDanhSachTuyenBay();
+            frmQuanLyTuyenXe_Load(sender, e);
+        }
+
+        private void frmQuanLyTuyenXe_Load(object sender, EventArgs e)
+        {
+            dtgDanhSachTuyen.Rows.Clear();
+            foreach(var item in new QUANLYXEKHACHEntities().tblTuyenXes.ToList())
+                dtgDanhSachTuyen.Rows.Add(item.MaTuyen, item.tblBenXe.TenBenXe, item.tblBenXe1.TenBenXe);
         }
     }
 }

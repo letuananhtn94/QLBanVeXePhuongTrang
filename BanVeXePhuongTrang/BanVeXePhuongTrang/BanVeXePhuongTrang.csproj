@@ -102,6 +102,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BLL_BenXe.cs" />
+    <Compile Include="BLL\BLL_TuyenXe.cs" />
+    <Compile Include="BLL\BLL_XeKhach.cs" />
+    <Compile Include="BLL\BLL_XeTrungChuyen.cs" />
     <Compile Include="DAL\Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

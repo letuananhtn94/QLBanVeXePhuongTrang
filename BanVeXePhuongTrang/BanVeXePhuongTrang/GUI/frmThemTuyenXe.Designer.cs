@@ -30,17 +30,16 @@
         {
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
-            this.cbMaSanBayDen = new System.Windows.Forms.ComboBox();
-            this.cbMaSanBayDi = new System.Windows.Forms.ComboBox();
+            this.cbTenBenDen = new System.Windows.Forms.ComboBox();
+            this.cbTenBenDi = new System.Windows.Forms.ComboBox();
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
+            this.btnThêm = new DevComponents.DotNetBar.ButtonX();
+            this.btThoat = new DevComponents.DotNetBar.ButtonX();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtMaTuyen = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
-            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
-            this.btThoat = new DevComponents.DotNetBar.ButtonX();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelEx1.SuspendLayout();
             this.panelEx2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
@@ -69,11 +68,10 @@
             // 
             this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx2.Controls.Add(this.cbMaSanBayDen);
-            this.panelEx2.Controls.Add(this.cbMaSanBayDi);
+            this.panelEx2.Controls.Add(this.cbTenBenDen);
+            this.panelEx2.Controls.Add(this.cbTenBenDi);
             this.panelEx2.Controls.Add(this.reflectionLabel1);
-            this.panelEx2.Controls.Add(this.buttonX2);
-            this.panelEx2.Controls.Add(this.buttonX1);
+            this.panelEx2.Controls.Add(this.btnThêm);
             this.panelEx2.Controls.Add(this.btThoat);
             this.panelEx2.Controls.Add(this.PictureBox1);
             this.panelEx2.Controls.Add(this.txtMaTuyen);
@@ -94,27 +92,27 @@
             this.panelEx2.Style.GradientAngle = 90;
             this.panelEx2.TabIndex = 1;
             // 
-            // cbMaSanBayDen
+            // cbTenBenDen
             // 
-            this.cbMaSanBayDen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMaSanBayDen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbMaSanBayDen.FormattingEnabled = true;
-            this.cbMaSanBayDen.Location = new System.Drawing.Point(245, 194);
-            this.cbMaSanBayDen.Name = "cbMaSanBayDen";
-            this.cbMaSanBayDen.Size = new System.Drawing.Size(216, 27);
-            this.cbMaSanBayDen.TabIndex = 92;
-            this.cbMaSanBayDen.SelectedIndexChanged += new System.EventHandler(this.cbMaSanBayDen_SelectedIndexChanged);
+            this.cbTenBenDen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTenBenDen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbTenBenDen.FormattingEnabled = true;
+            this.cbTenBenDen.Location = new System.Drawing.Point(245, 194);
+            this.cbTenBenDen.Name = "cbTenBenDen";
+            this.cbTenBenDen.Size = new System.Drawing.Size(216, 27);
+            this.cbTenBenDen.TabIndex = 92;
+            this.cbTenBenDen.SelectedIndexChanged += new System.EventHandler(this.cbMaSanBayDen_SelectedIndexChanged);
             // 
-            // cbMaSanBayDi
+            // cbTenBenDi
             // 
-            this.cbMaSanBayDi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMaSanBayDi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbMaSanBayDi.FormattingEnabled = true;
-            this.cbMaSanBayDi.Location = new System.Drawing.Point(245, 153);
-            this.cbMaSanBayDi.Name = "cbMaSanBayDi";
-            this.cbMaSanBayDi.Size = new System.Drawing.Size(216, 27);
-            this.cbMaSanBayDi.TabIndex = 91;
-            this.cbMaSanBayDi.SelectedIndexChanged += new System.EventHandler(this.cbMaSanBayDi_SelectedIndexChanged);
+            this.cbTenBenDi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTenBenDi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbTenBenDi.FormattingEnabled = true;
+            this.cbTenBenDi.Location = new System.Drawing.Point(245, 153);
+            this.cbTenBenDi.Name = "cbTenBenDi";
+            this.cbTenBenDi.Size = new System.Drawing.Size(216, 27);
+            this.cbTenBenDi.TabIndex = 91;
+            this.cbTenBenDi.SelectedIndexChanged += new System.EventHandler(this.cbMaSanBayDi_SelectedIndexChanged);
             // 
             // reflectionLabel1
             // 
@@ -129,71 +127,20 @@
             this.reflectionLabel1.TabIndex = 88;
             this.reflectionLabel1.Text = "<b><font size=\"+6\"><i></i><font color=\"#B02B2C\">THÊM TUYẾN XE</font></font></b>";
             // 
-            // txtMaTuyen
+            // btnThêm
             // 
-            this.txtMaTuyen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtMaTuyen.ForeColor = System.Drawing.Color.Blue;
-            this.txtMaTuyen.Location = new System.Drawing.Point(245, 114);
-            this.txtMaTuyen.Name = "txtMaTuyen";
-            this.txtMaTuyen.ReadOnly = true;
-            this.txtMaTuyen.Size = new System.Drawing.Size(216, 26);
-            this.txtMaTuyen.TabIndex = 37;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(77, 198);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 23);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Mã Bến Xe Đến:";
-            // 
-            // Label3
-            // 
-            this.Label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.Label3.Location = new System.Drawing.Point(77, 157);
-            this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(124, 23);
-            this.Label3.TabIndex = 36;
-            this.Label3.Text = "Mã Bến Xe Đi:";
-            // 
-            // Label2
-            // 
-            this.Label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.Label2.Location = new System.Drawing.Point(77, 117);
-            this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(124, 23);
-            this.Label2.TabIndex = 35;
-            this.Label2.Text = "Mã Tuyến Xe:";
-            // 
-            // buttonX2
-            // 
-            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.buttonX2.Image = global::BanVeXePhuongTrang.Properties.Resources.Actions_list_add_icon;
-            this.buttonX2.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonX2.Location = new System.Drawing.Point(84, 255);
-            this.buttonX2.Name = "buttonX2";
-            this.buttonX2.Size = new System.Drawing.Size(96, 37);
-            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX2.TabIndex = 87;
-            this.buttonX2.Text = "Thêm";
-            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.buttonX1.Image = global::BanVeXePhuongTrang.Properties.Resources.create_icon;
-            this.buttonX1.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonX1.Location = new System.Drawing.Point(227, 255);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(110, 37);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 86;
-            this.buttonX1.Text = "Tạo mới";
+            this.btnThêm.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThêm.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThêm.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThêm.Image = global::BanVeXePhuongTrang.Properties.Resources.Actions_list_add_icon;
+            this.btnThêm.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnThêm.Location = new System.Drawing.Point(245, 255);
+            this.btnThêm.Name = "btnThêm";
+            this.btnThêm.Size = new System.Drawing.Size(96, 37);
+            this.btnThêm.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnThêm.TabIndex = 87;
+            this.btnThêm.Text = "Thêm";
+            this.btnThêm.Click += new System.EventHandler(this.btnThêm_Click);
             // 
             // btThoat
             // 
@@ -220,6 +167,43 @@
             this.PictureBox1.TabIndex = 42;
             this.PictureBox1.TabStop = false;
             // 
+            // txtMaTuyen
+            // 
+            this.txtMaTuyen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtMaTuyen.ForeColor = System.Drawing.Color.Blue;
+            this.txtMaTuyen.Location = new System.Drawing.Point(245, 114);
+            this.txtMaTuyen.Name = "txtMaTuyen";
+            this.txtMaTuyen.ReadOnly = true;
+            this.txtMaTuyen.Size = new System.Drawing.Size(216, 26);
+            this.txtMaTuyen.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(77, 198);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 23);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Bến Xe Đến:";
+            // 
+            // Label3
+            // 
+            this.Label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Label3.Location = new System.Drawing.Point(77, 157);
+            this.Label3.Name = "Label3";
+            this.Label3.Size = new System.Drawing.Size(124, 23);
+            this.Label3.TabIndex = 36;
+            this.Label3.Text = "Bến Xe Đi:";
+            // 
+            // Label2
+            // 
+            this.Label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Label2.Location = new System.Drawing.Point(77, 117);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(124, 23);
+            this.Label2.TabIndex = 35;
+            this.Label2.Text = "Mã Tuyến Xe:";
+            // 
             // frmThemTuyenXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,6 +215,7 @@
             this.Name = "frmThemTuyenXe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm Tuyến Xe";
+            this.Load += new System.EventHandler(this.frmThemTuyenXe_Load);
             this.panelEx1.ResumeLayout(false);
             this.panelEx2.ResumeLayout(false);
             this.panelEx2.PerformLayout();
@@ -244,15 +229,14 @@
         private DevComponents.DotNetBar.PanelEx panelEx1;
         private DevComponents.DotNetBar.PanelEx panelEx2;
         private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel1;
-        private DevComponents.DotNetBar.ButtonX buttonX2;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX btnThêm;
         private DevComponents.DotNetBar.ButtonX btThoat;
         internal System.Windows.Forms.PictureBox PictureBox1;
         internal System.Windows.Forms.TextBox txtMaTuyen;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbMaSanBayDen;
-        private System.Windows.Forms.ComboBox cbMaSanBayDi;
+        private System.Windows.Forms.ComboBox cbTenBenDen;
+        private System.Windows.Forms.ComboBox cbTenBenDi;
     }
 }

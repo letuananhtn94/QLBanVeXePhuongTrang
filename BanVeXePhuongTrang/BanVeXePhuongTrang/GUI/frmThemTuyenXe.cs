@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BanVeXePhuongTrang.DAL;
+using BanVeXePhuongTrang.BLL;
 
 namespace BanVeXePhuongTrang.GUI
 {
     public partial class frmThemTuyenXe : Form
     {
-        DataTable DSSanBay;
-
         public frmThemTuyenXe()
         {
             InitializeComponent();
@@ -25,27 +25,56 @@ namespace BanVeXePhuongTrang.GUI
             this.Close();
         }
 
-        private void buttonX2_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void cbMaSanBayDi_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(!cbMaSanBayDen.Text.Equals("") && !cbMaSanBayDi.Text.Equals(""))
+            if(!cbTenBenDen.Text.Equals("") && !cbTenBenDi.Text.Equals(""))
             {
-                String temp = cbMaSanBayDi.Text.ToString() + "_" + cbMaSanBayDen.Text.ToString();
-                txtMaTuyen.Text = temp;
+                QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+
+                tblBenXe benXeDi = db.tblBenXes.Where(t => t.TenBenXe == cbTenBenDi.SelectedItem.ToString()).Single();
+                tblBenXe benXeDen = db.tblBenXes.Where(t => t.TenBenXe == cbTenBenDen.SelectedItem.ToString()).Single();
+                
+                txtMaTuyen.Text = benXeDi.MaBenXe + "_" + benXeDen.MaBenXe;
             }
         }
 
         private void cbMaSanBayDen_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!cbMaSanBayDen.Text.Equals("") && !cbMaSanBayDi.Text.Equals(""))
+            cbMaSanBayDi_SelectedIndexChanged(sender, e);
+        }
+
+        private void frmThemTuyenXe_Load(object sender, EventArgs e)
+        {
+            foreach (var item in new QUANLYXEKHACHEntities().tblBenXes.ToList())
             {
-                String temp = cbMaSanBayDi.Text.ToString() + "_" + cbMaSanBayDen.Text.ToString();
-                txtMaTuyen.Text = temp;
+                cbTenBenDen.Items.Add(item.TenBenXe);
+                cbTenBenDi.Items.Add(item.TenBenXe);
             }
+        }
+
+        private void btnThêm_Click(object sender, EventArgs e)
+        {
+            QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+
+            tblBenXe benXeDi = db.tblBenXes.Where(t => t.TenBenXe == cbTenBenDi.SelectedItem.ToString()).Single();
+            tblBenXe benXeDen = db.tblBenXes.Where(t => t.TenBenXe == cbTenBenDen.SelectedItem.ToString()).Single();
+
+            BLL_TuyenXe temp = new BLL_TuyenXe();
+            if(temp.canInsert(benXeDi.MaBenXe, benXeDen.MaBenXe))
+            {
+                tblTuyenXe tuyenXe = new tblTuyenXe();
+                tuyenXe.MaBenXeDi = benXeDi.MaBenXe;
+                tuyenXe.MaBenXeDen = benXeDen.MaBenXe;
+                tuyenXe.MaTuyen = txtMaTuyen.Text.ToString();
+
+                db.tblTuyenXes.Add(tuyenXe);
+                db.SaveChanges();
+
+                MessageBox.Show("Thêm thành công");
+            }
+            else
+                MessageBox.Show("Thêm thất bại");
         }
     }
 }

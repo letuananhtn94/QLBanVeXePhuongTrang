@@ -31,21 +31,21 @@
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgDanhSachTuyen = new System.Windows.Forms.DataGridView();
             this.MaTuyen = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.BenXeDi = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.BenXeDen = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.btThoat = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.btThem = new DevComponents.DotNetBar.ButtonX();
             this.btXoa = new DevComponents.DotNetBar.ButtonX();
+            this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelEx1.SuspendLayout();
             this.panelEx2.SuspendLayout();
             this.groupPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDanhSachTuyen)).BeginInit();
             this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -95,7 +95,7 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.dataGridView1);
+            this.groupPanel1.Controls.Add(this.dtgDanhSachTuyen);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Location = new System.Drawing.Point(35, 93);
             this.groupPanel1.Name = "groupPanel1";
@@ -131,19 +131,19 @@
             this.groupPanel1.TabIndex = 89;
             this.groupPanel1.Text = "Thông tin các tuyến xe";
             // 
-            // dataGridView1
+            // dtgDanhSachTuyen
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgDanhSachTuyen.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dtgDanhSachTuyen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgDanhSachTuyen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaTuyen,
             this.BenXeDi,
             this.BenXeDen});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(751, 348);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgDanhSachTuyen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgDanhSachTuyen.Location = new System.Drawing.Point(0, 0);
+            this.dtgDanhSachTuyen.Name = "dtgDanhSachTuyen";
+            this.dtgDanhSachTuyen.Size = new System.Drawing.Size(751, 348);
+            this.dtgDanhSachTuyen.TabIndex = 0;
             // 
             // MaTuyen
             // 
@@ -206,20 +206,6 @@
             this.groupPanel2.TabIndex = 90;
             this.groupPanel2.Text = "Chức năng";
             // 
-            // reflectionLabel1
-            // 
-            // 
-            // 
-            // 
-            this.reflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.reflectionLabel1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.reflectionLabel1.Location = new System.Drawing.Point(271, 31);
-            this.reflectionLabel1.Name = "reflectionLabel1";
-            this.reflectionLabel1.Size = new System.Drawing.Size(317, 56);
-            this.reflectionLabel1.TabIndex = 85;
-            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i></i><font color=\"#B02B2C\">QUẢN LÝ TUYẾN XE</font></font></b" +
-    ">";
-            // 
             // btThoat
             // 
             this.btThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -280,6 +266,20 @@
             this.btXoa.Text = "Xóa";
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
+            // reflectionLabel1
+            // 
+            // 
+            // 
+            // 
+            this.reflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.reflectionLabel1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.reflectionLabel1.Location = new System.Drawing.Point(271, 31);
+            this.reflectionLabel1.Name = "reflectionLabel1";
+            this.reflectionLabel1.Size = new System.Drawing.Size(317, 56);
+            this.reflectionLabel1.TabIndex = 85;
+            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i></i><font color=\"#B02B2C\">QUẢN LÝ TUYẾN XE</font></font></b" +
+    ">";
+            // 
             // PictureBox1
             // 
             this.PictureBox1.Image = global::BanVeXePhuongTrang.Properties.Resources.xe_khach_phuong_trang;
@@ -298,10 +298,11 @@
             this.Controls.Add(this.panelEx1);
             this.Name = "frmQuanLyTuyenXe";
             this.Text = "Quản Lý Tuyến Xe";
+            this.Load += new System.EventHandler(this.frmQuanLyTuyenXe_Load);
             this.panelEx1.ResumeLayout(false);
             this.panelEx2.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDanhSachTuyen)).EndInit();
             this.groupPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -315,7 +316,7 @@
         private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel1;
         internal System.Windows.Forms.PictureBox PictureBox1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgDanhSachTuyen;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
         private DevComponents.DotNetBar.ButtonX btThoat;
         private DevComponents.DotNetBar.ButtonX buttonX1;
