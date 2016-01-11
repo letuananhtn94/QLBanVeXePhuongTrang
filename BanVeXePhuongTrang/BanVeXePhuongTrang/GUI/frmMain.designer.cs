@@ -3117,11 +3117,8 @@
             this.ribbonControl1.Controls.Add(this.rbpBaoCao);
             this.ribbonControl1.Controls.Add(this.rbpThayDoi);
             this.ribbonControl1.Controls.Add(this.rbpPhanQuyen);
-<<<<<<< c89da76aa3ee940704eaaddaa7da8c510a5e2f98
             this.ribbonControl1.Controls.Add(this.rbpDanhMuc);
             this.ribbonControl1.Controls.Add(this.rbpTraCuu);
-=======
->>>>>>> 294feff5aa9cefe1ede3d62f0f850862e11140ac
             this.ribbonControl1.Controls.Add(this.rbpHeThong);
             this.ribbonControl1.Controls.Add(this.rbpGioiThieu);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;

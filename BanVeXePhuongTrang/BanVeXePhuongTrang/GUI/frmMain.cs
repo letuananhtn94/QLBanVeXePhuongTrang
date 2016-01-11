@@ -65,9 +65,9 @@ namespace BanVeXePhuongTrang
             lbthoigian.Text = Convert.ToDateTime(DateTime.Today).ToString("dd/MM/yyyy");
 
 
-            //frmDangNhap f = new frmDangNhap();          
-            //f.ShowDialog();
-            //laydulieu();
+            frmDangNhap f = new frmDangNhap();
+            f.ShowDialog();
+            laydulieu();
              
             if (lbTenDangNhap.Text.Equals("Chưa đăng nhập"))
             {
