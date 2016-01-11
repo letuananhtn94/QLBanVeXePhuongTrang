@@ -16,10 +16,12 @@ namespace BanVeXePhuongTrang.GUI
         public frmThayDoiQD2()
         {
             InitializeComponent();
-            
+            cbHuyDatCho.Items.Add("True");
+            cbHuyDatCho.Items.Add("False");
+
+            cbHuyDatCho.SelectedIndex = 0;
         }
 
-    
         private void btThoat_Click(object sender, EventArgs e)
         {
             DevComponents.DotNetBar.TabControl TAB = frmMain.m_Tab;
@@ -27,20 +29,8 @@ namespace BanVeXePhuongTrang.GUI
             Close();
         }
 
-        private void btThem_Click(object sender, EventArgs e)
+        private void buttonX2_Click(object sender, EventArgs e)
         {
-           
         }
-
-        private void btXoa_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonX1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
     }
 }

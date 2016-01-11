@@ -2385,16 +2385,18 @@ SELECT Nam, DoanhThu, TiLe FROM tblBaoCaoDoanhThuNam WHERE (Nam = @Nam)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Nam, DoanhThu, TiLe FROM dbo.tblBaoCaoDoanhThuNam";
+            this._commandCollection[0].CommandText = "SELECT Nam, DoanhThu, TiLe FROM dbo.tblBaoCaoDoanhThuNam\r\nWHERE Nam=@Nam";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nam", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Nam", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuNamDataTable dataTable) {
+        public virtual int Fill(QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuNamDataTable dataTable, int Nam) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Nam));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -2406,8 +2408,9 @@ SELECT Nam, DoanhThu, TiLe FROM tblBaoCaoDoanhThuNam WHERE (Nam = @Nam)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuNamDataTable GetData() {
+        public virtual QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuNamDataTable GetData(int Nam) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Nam));
             QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuNamDataTable dataTable = new QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuNamDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -2756,16 +2759,21 @@ SELECT Thang, Nam, SoChuyenDi, DoanhThu, TiLe FROM tblBaoCaoDoanhThuThang WHERE 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Thang, Nam, SoChuyenDi, DoanhThu, TiLe FROM dbo.tblBaoCaoDoanhThuThang";
+            this._commandCollection[0].CommandText = "SELECT Thang, Nam, SoChuyenDi, DoanhThu, TiLe FROM dbo.tblBaoCaoDoanhThuThang\r\nWH" +
+                "ERE Thang = @Thang and Nam=@Nam";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Thang", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Thang", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nam", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Nam", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThangDataTable dataTable) {
+        public virtual int Fill(QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThangDataTable dataTable, int Thang, int Nam) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Thang));
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Nam));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -2777,8 +2785,10 @@ SELECT Thang, Nam, SoChuyenDi, DoanhThu, TiLe FROM tblBaoCaoDoanhThuThang WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThangDataTable GetData() {
+        public virtual QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThangDataTable GetData(int Thang, int Nam) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Thang));
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Nam));
             QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThangDataTable dataTable = new QUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThangDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

@@ -379,7 +379,7 @@ namespace BanVeXePhuongTrang
         {
             if (checkTab("Thay Đổi Quy Định 3") == false)
             {
-                frmThayDoiQD3 form = new frmThayDoiQD3();
+                frmThayDoiQD2 form = new frmThayDoiQD2();
                 AddTabControl(form, "Thay Đổi Quy Định 3");
             }
         }
@@ -497,6 +497,20 @@ namespace BanVeXePhuongTrang
                 frmQuanLyTrungChuyen form = new frmQuanLyTrungChuyen();
                 AddTabControl(form, "Quản Lý Trung Chuyển");
             }
+        }
+
+        private void btDTChuyenDi_Click(object sender, EventArgs e)
+        {
+            if (checkTab("Báo Cao Doanh Thu Chuyến Đi") == false)
+            {
+                frmBCDoanhThuChuyenDi form = new frmBCDoanhThuChuyenDi();
+                AddTabControl(form, "Báo Cao Doanh Thu Chuyến Đi");
+            }
+        }
+
+        private void btnBCChuyenDi_Click(object sender, EventArgs e)
+        {
+            btDTChuyenDi_Click(sender, e);
         }
 
     }

@@ -17,13 +17,7 @@ namespace BanVeXePhuongTrang.GUI
 
         public frmBCDoanhThuNam()
         {
-            InitializeComponent();
-
-            for (int i = 0; i < 20; i++)
-            {
-                int n = 2010 + i;
-                cbNam.Items.Add(n);
-            }
+            InitializeComponent();         
         }
 
 
@@ -36,7 +30,19 @@ namespace BanVeXePhuongTrang.GUI
 
         private void btBaoCao_Click(object sender, EventArgs e)
         {
+            this.tblBaoCaoDoanhThuNamTableAdapter.Fill(this.qUANLYXEKHACHDataSet.tblBaoCaoDoanhThuNam, int.Parse(cbNam.SelectedIndex.ToString()));
+
+            this.reportViewer1.RefreshReport();
+        }
+
+        private void frmBCDoanhThuNam_Load(object sender, EventArgs e)
+        {
            
+           
+            for (int i = 2010; i < DateTime.Now.Year + 1; i++)
+            {
+                cbNam.Items.Add(i);
+            }
         }
 
     }

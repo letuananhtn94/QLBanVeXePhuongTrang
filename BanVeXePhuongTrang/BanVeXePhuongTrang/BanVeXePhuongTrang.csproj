@@ -176,6 +176,12 @@
     <Compile Include="DAL\tblXeTrungChuyen.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmBCDoanhThuChuyenDi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmBCDoanhThuChuyenDi.Designer.cs">
+      <DependentUpon>frmBCDoanhThuChuyenDi.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmBCDoanhThuNam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -302,12 +308,6 @@
     <Compile Include="GUI\frmThayDoiQD2.Designer.cs">
       <DependentUpon>frmThayDoiQD2.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmThayDoiQD3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmThayDoiQD3.Designer.cs">
-      <DependentUpon>frmThayDoiQD3.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\frmThemBenXe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -363,6 +363,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QUANLYXEKHACHDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\frmBCDoanhThuChuyenDi.resx">
+      <DependentUpon>frmBCDoanhThuChuyenDi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmBCDoanhThuNam.resx">
       <DependentUpon>frmBCDoanhThuNam.cs</DependentUpon>
     </EmbeddedResource>
@@ -426,9 +429,6 @@
     <EmbeddedResource Include="GUI\frmThayDoiQD2.resx">
       <DependentUpon>frmThayDoiQD2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmThayDoiQD3.resx">
-      <DependentUpon>frmThayDoiQD3.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmThemBenXe.resx">
       <DependentUpon>frmThemBenXe.cs</DependentUpon>
     </EmbeddedResource>
@@ -453,7 +453,11 @@
     <EmbeddedResource Include="GUI\frmTaiKhoan.resx">
       <DependentUpon>frmTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Report1.rdlc" />
+    <EmbeddedResource Include="GUI\Report1.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Report2.rdlc" />
+    <EmbeddedResource Include="GUI\Report3.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

@@ -47,8 +47,6 @@
             this.txtDiaChi = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.btThemMoi = new DevComponents.DotNetBar.ButtonX();
-            this.lbTongLoaiThuoc = new DevComponents.DotNetBar.LabelX();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.btCapNhat = new DevComponents.DotNetBar.ButtonX();
             this.btThoat = new DevComponents.DotNetBar.ButtonX();
             this.btxoa = new DevComponents.DotNetBar.ButtonX();
@@ -126,8 +124,6 @@
             this.panelDockContainer1.Controls.Add(this.txtDiaChi);
             this.panelDockContainer1.Controls.Add(this.labelX1);
             this.panelDockContainer1.Controls.Add(this.btThemMoi);
-            this.panelDockContainer1.Controls.Add(this.lbTongLoaiThuoc);
-            this.panelDockContainer1.Controls.Add(this.labelX4);
             this.panelDockContainer1.Controls.Add(this.btCapNhat);
             this.panelDockContainer1.Controls.Add(this.btThoat);
             this.panelDockContainer1.Controls.Add(this.btxoa);
@@ -405,35 +401,6 @@
             this.btThemMoi.TabIndex = 13;
             this.btThemMoi.Text = "Thêm mới";
             this.btThemMoi.Click += new System.EventHandler(this.btkhong_Click);
-            // 
-            // lbTongLoaiThuoc
-            // 
-            this.lbTongLoaiThuoc.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lbTongLoaiThuoc.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lbTongLoaiThuoc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTongLoaiThuoc.ForeColor = System.Drawing.Color.Red;
-            this.lbTongLoaiThuoc.Location = new System.Drawing.Point(146, 420);
-            this.lbTongLoaiThuoc.Name = "lbTongLoaiThuoc";
-            this.lbTongLoaiThuoc.Size = new System.Drawing.Size(73, 20);
-            this.lbTongLoaiThuoc.TabIndex = 12;
-            this.lbTongLoaiThuoc.Text = "0";
-            // 
-            // labelX4
-            // 
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelX4.Location = new System.Drawing.Point(11, 419);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(132, 20);
-            this.labelX4.TabIndex = 9;
-            this.labelX4.Text = "Tổng số nhân viên:";
             // 
             // btCapNhat
             // 
@@ -905,8 +872,6 @@
         private DevComponents.DotNetBar.Controls.TextBoxX txtDiaChi;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.ButtonX btThemMoi;
-        private DevComponents.DotNetBar.LabelX lbTongLoaiThuoc;
-        private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.ButtonX btCapNhat;
         private DevComponents.DotNetBar.ButtonX btxoa;
         private DevComponents.DotNetBar.ButtonX btthem;

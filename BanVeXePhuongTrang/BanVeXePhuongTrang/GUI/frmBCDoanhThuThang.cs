@@ -28,39 +28,25 @@ namespace BanVeXePhuongTrang.GUI
 
         private void btBaoCao_Click(object sender, EventArgs e)
         {
-            SetParammater();
+            //SetParammater();
+            this.tblBaoCaoDoanhThuThangTableAdapter.Fill(this.qUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThang, int.Parse(cbThang.SelectedIndex.ToString()), int.Parse(cbNam.SelectedIndex.ToString()));
             reportViewer1.RefreshReport();
         }
 
         private void frmBCDoanhThuThang_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qUANLYXEKHACHDataSet1.tblBaoCaoDoanhThuThang' table. You can move, or remove it, as needed.
-            //this.tblBaoCaoDoanhThuThangTableAdapter.Fill(this.qUANLYXEKHACHDataSet1.tblBaoCaoDoanhThuThang);
-            // TODO: This line of code loads data into the 'qUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThang' table. You can move, or remove it, as needed.
-            this.tblBaoCaoDoanhThuThangTableAdapter.Fill(this.qUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThang);
-            // TODO: This line of code loads data into the 'qUANLYXEKHACHDataSet.tblBaoCaoDoanhThuThang' table. You can move, or remove it, as needed.
 
             for (int i = 1; i < 13; i++)
             {
                 cbThang.Items.Add(i);
             }
-            for (int i = 1990; i < DateTime.Now.Year; i++)
+            for (int i = 2010; i < DateTime.Now.Year + 1; i++)
             {
                 cbNam.Items.Add(i);
             }
 
-            SetParammater();
+            //SetParammater();
             reportViewer1.RefreshReport();
-        }
-
-        void SetParammater() {
-            ReportParameter[] param = new ReportParameter[2];
-            param[0] = new ReportParameter("Thang");
-            param[0].Values.Add(cbThang.SelectedItem.ToString());
-            param[1] = new ReportParameter("Nam");
-            param[1].Values.Add(cbNam.SelectedItem.ToString());
-
-            reportViewer1.LocalReport.SetParameters(param);
         }
 
     }
