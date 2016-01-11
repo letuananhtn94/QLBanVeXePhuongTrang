@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BanVeXePhuongTrang.DAL;
 
 namespace BanVeXePhuongTrang.GUI
 {
@@ -17,15 +18,9 @@ namespace BanVeXePhuongTrang.GUI
             InitializeComponent();
         }
 
-    
-        private void cbDanhSachChuyenBay_MouseClick(object sender, MouseEventArgs e)
+        private void frmDanhSachDatVe_Load(object sender, EventArgs e)
         {
-            
-        }
 
-        private void cbDanhSachChuyenBay_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -39,25 +34,47 @@ namespace BanVeXePhuongTrang.GUI
 
             if (result == DialogResult.Yes)
             {
-                if(dataGridView1.Rows[0].Cells[0].Value == null)
+                if(dtgDanhSachVe.Rows[0].Cells[0].Value == null)
                 {
                     MessageBox.Show("Không có dữ liệu để lưu", "Thông báo");
                     return;
                 }
 
-                foreach (DataGridViewRow row in dataGridView1.Rows)
+                foreach (DataGridViewRow row in dtgDanhSachVe.Rows)
                 {
                    
                 }
 
                 MessageBox.Show("Cập nhật thành công", "Thông báo");
-                cbDanhSachChuyenBay_SelectedIndexChanged(sender, e);
             }
         }
 
-        private void textBoxX1_TextChanged(object sender, EventArgs e)
+        private void buttonX1_Click(object sender, EventArgs e)
         {
-
+            DevComponents.DotNetBar.TabControl TAB = frmMain.m_Tab;
+            TAB.Tabs.Remove(TAB.SelectedTab);
+            Close();
         }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dtgDanhSachVe.Rows.Clear();
+                QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
+                foreach (var item in db.tblPhieuDatChoes.ToList())
+                {
+                    dtgDanhSachVe.Rows.Add(item.HoTen,
+                                            "",
+                                            item.DienThoai,
+                                            item.TrungChuyen,
+                                            "");
+                }
+            }
+            catch { }
+            
+        }
+
+        
     }
 }

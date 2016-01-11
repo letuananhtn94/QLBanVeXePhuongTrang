@@ -295,11 +295,11 @@
             // 
             // TenBenXe
             // 
+            this.TenBenXe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TenBenXe.DataPropertyName = "TenBenXe";
             this.TenBenXe.FillWeight = 250F;
             this.TenBenXe.HeaderText = "Tên Bến Xe";
             this.TenBenXe.Name = "TenBenXe";
-            this.TenBenXe.Width = 280;
             // 
             // frmQuanLyBenXe
             // 

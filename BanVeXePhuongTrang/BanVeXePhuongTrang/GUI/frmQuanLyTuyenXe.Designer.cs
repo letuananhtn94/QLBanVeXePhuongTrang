@@ -32,9 +32,6 @@
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.dtgDanhSachTuyen = new System.Windows.Forms.DataGridView();
-            this.MaTuyen = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
-            this.BenXeDi = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
-            this.BenXeDen = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btThoat = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
@@ -42,6 +39,9 @@
             this.btXoa = new DevComponents.DotNetBar.ButtonX();
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
+            this.MaTuyen = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
+            this.BenXeDi = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
+            this.BenXeDen = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.panelEx1.SuspendLayout();
             this.panelEx2.SuspendLayout();
             this.groupPanel1.SuspendLayout();
@@ -144,24 +144,6 @@
             this.dtgDanhSachTuyen.Name = "dtgDanhSachTuyen";
             this.dtgDanhSachTuyen.Size = new System.Drawing.Size(751, 348);
             this.dtgDanhSachTuyen.TabIndex = 0;
-            // 
-            // MaTuyen
-            // 
-            this.MaTuyen.HeaderText = "Mã Tuyến";
-            this.MaTuyen.Name = "MaTuyen";
-            this.MaTuyen.Width = 200;
-            // 
-            // BenXeDi
-            // 
-            this.BenXeDi.HeaderText = "Bến Xe Đi";
-            this.BenXeDi.Name = "BenXeDi";
-            this.BenXeDi.Width = 250;
-            // 
-            // BenXeDen
-            // 
-            this.BenXeDen.HeaderText = "Bến Xe Đến";
-            this.BenXeDen.Name = "BenXeDen";
-            this.BenXeDen.Width = 250;
             // 
             // groupPanel2
             // 
@@ -289,6 +271,24 @@
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox1.TabIndex = 52;
             this.PictureBox1.TabStop = false;
+            // 
+            // MaTuyen
+            // 
+            this.MaTuyen.HeaderText = "Mã Tuyến";
+            this.MaTuyen.Name = "MaTuyen";
+            this.MaTuyen.Width = 200;
+            // 
+            // BenXeDi
+            // 
+            this.BenXeDi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BenXeDi.HeaderText = "Bến Xe Đi";
+            this.BenXeDi.Name = "BenXeDi";
+            // 
+            // BenXeDen
+            // 
+            this.BenXeDen.HeaderText = "Bến Xe Đến";
+            this.BenXeDen.Name = "BenXeDen";
+            this.BenXeDen.Width = 250;
             // 
             // frmQuanLyTuyenXe
             // 

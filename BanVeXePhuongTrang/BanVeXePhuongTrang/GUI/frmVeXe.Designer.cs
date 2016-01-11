@@ -116,116 +116,121 @@
             this.tabXeGiuongNam = new DevComponents.DotNetBar.TabItem(this.components);
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnLapVe = new DevComponents.DotNetBar.ButtonX();
+            this.btnThoat = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.itemPanel60 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem60 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb49 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel55 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem55 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb44 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel50 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem50 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb40 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel45 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem45 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb36 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel40 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem40 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb32 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel35 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem35 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb28 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel30 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem30 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb24 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel25 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem25 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb20 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel20 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem20 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb16 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel15 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem15 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb12 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel10 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem10 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb8 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel5 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem5 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb4 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel59 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem59 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb48 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel54 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem54 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb43 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel49 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem49 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb39 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel44 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem44 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb35 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel39 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem39 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb31 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel34 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem34 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb27 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel29 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem29 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb23 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel24 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem24 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb19 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel19 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem19 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb15 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel14 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem14 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb11 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel9 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem9 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb7 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel4 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem4 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb3 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel58 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem58 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb47 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel57 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem57 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb46 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel52 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem52 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb42 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel47 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem47 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb38 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel42 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem42 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb34 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel37 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem37 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb30 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel32 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem32 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb26 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel27 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem27 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb22 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel22 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem22 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb18 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel17 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem17 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb14 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel12 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem12 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb10 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel7 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem7 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb6 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel2 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem2 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb2 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel56 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem56 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb45 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel51 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem51 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb41 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel46 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem46 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb37 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel41 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem41 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb33 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel36 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem36 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb29 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel31 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem31 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb25 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel26 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem26 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb21 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel21 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem21 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb17 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel16 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem16 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb13 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel11 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem11 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb9 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel6 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem6 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb5 = new DevComponents.DotNetBar.CheckBoxItem();
             this.itemPanel1 = new DevComponents.DotNetBar.ItemPanel();
-            this.checkBoxItem1 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.XeKhach_Cb1 = new DevComponents.DotNetBar.CheckBoxItem();
             this.tabXeThuong = new DevComponents.DotNetBar.TabItem(this.components);
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.cbbMaChuyenDi = new System.Windows.Forms.ComboBox();
+            this.txtGia = new System.Windows.Forms.TextBox();
+            this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.txtKhoiHanh = new System.Windows.Forms.TextBox();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.txtTuyen = new System.Windows.Forms.TextBox();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.btnLapVe = new DevComponents.DotNetBar.ButtonX();
-            this.btnTaoMoi = new DevComponents.DotNetBar.ButtonX();
-            this.btnThoat = new DevComponents.DotNetBar.ButtonX();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControlPanel2.SuspendLayout();
             this.panelEx3.SuspendLayout();
@@ -1329,7 +1334,6 @@
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.btnLapVe);
-            this.groupPanel2.Controls.Add(this.btnTaoMoi);
             this.groupPanel2.Controls.Add(this.btnThoat);
             this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel2.Location = new System.Drawing.Point(719, 283);
@@ -1365,6 +1369,37 @@
             this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel2.TabIndex = 110;
             this.groupPanel2.Text = "Chức năng";
+            // 
+            // btnLapVe
+            // 
+            this.btnLapVe.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnLapVe.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnLapVe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLapVe.Image = global::BanVeXePhuongTrang.Properties.Resources.Save_icon;
+            this.btnLapVe.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnLapVe.Location = new System.Drawing.Point(83, 20);
+            this.btnLapVe.Name = "btnLapVe";
+            this.btnLapVe.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnLapVe.Size = new System.Drawing.Size(168, 37);
+            this.btnLapVe.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnLapVe.TabIndex = 73;
+            this.btnLapVe.Text = "Lập vé";
+            this.btnLapVe.Click += new System.EventHandler(this.btnLapVe_Click);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThoat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThoat.Image = global::BanVeXePhuongTrang.Properties.Resources.Windows_Close_Program_icon;
+            this.btnThoat.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnThoat.Location = new System.Drawing.Point(83, 79);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(168, 37);
+            this.btnThoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnThoat.TabIndex = 73;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // groupPanel1
             // 
@@ -1521,7 +1556,7 @@
             this.itemPanel60.DragDropSupport = true;
             this.itemPanel60.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel60.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem60});
+            this.XeKhach_Cb49});
             this.itemPanel60.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel60.Location = new System.Drawing.Point(301, 356);
             this.itemPanel60.Name = "itemPanel60";
@@ -1529,10 +1564,10 @@
             this.itemPanel60.TabIndex = 1;
             this.itemPanel60.Text = "itemPanel1";
             // 
-            // checkBoxItem60
+            // XeKhach_Cb49
             // 
-            this.checkBoxItem60.Name = "checkBoxItem60";
-            this.checkBoxItem60.Text = "49";
+            this.XeKhach_Cb49.Name = "XeKhach_Cb49";
+            this.XeKhach_Cb49.Text = "49";
             // 
             // itemPanel55
             // 
@@ -1545,7 +1580,7 @@
             this.itemPanel55.DragDropSupport = true;
             this.itemPanel55.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel55.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem55});
+            this.XeKhach_Cb44});
             this.itemPanel55.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel55.Location = new System.Drawing.Point(301, 325);
             this.itemPanel55.Name = "itemPanel55";
@@ -1553,10 +1588,10 @@
             this.itemPanel55.TabIndex = 1;
             this.itemPanel55.Text = "itemPanel1";
             // 
-            // checkBoxItem55
+            // XeKhach_Cb44
             // 
-            this.checkBoxItem55.Name = "checkBoxItem55";
-            this.checkBoxItem55.Text = "44";
+            this.XeKhach_Cb44.Name = "XeKhach_Cb44";
+            this.XeKhach_Cb44.Text = "44";
             // 
             // itemPanel50
             // 
@@ -1569,7 +1604,7 @@
             this.itemPanel50.DragDropSupport = true;
             this.itemPanel50.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel50.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem50});
+            this.XeKhach_Cb40});
             this.itemPanel50.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel50.Location = new System.Drawing.Point(301, 294);
             this.itemPanel50.Name = "itemPanel50";
@@ -1577,10 +1612,10 @@
             this.itemPanel50.TabIndex = 1;
             this.itemPanel50.Text = "itemPanel1";
             // 
-            // checkBoxItem50
+            // XeKhach_Cb40
             // 
-            this.checkBoxItem50.Name = "checkBoxItem50";
-            this.checkBoxItem50.Text = "40";
+            this.XeKhach_Cb40.Name = "XeKhach_Cb40";
+            this.XeKhach_Cb40.Text = "40";
             // 
             // itemPanel45
             // 
@@ -1593,7 +1628,7 @@
             this.itemPanel45.DragDropSupport = true;
             this.itemPanel45.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel45.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem45});
+            this.XeKhach_Cb36});
             this.itemPanel45.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel45.Location = new System.Drawing.Point(301, 263);
             this.itemPanel45.Name = "itemPanel45";
@@ -1601,10 +1636,10 @@
             this.itemPanel45.TabIndex = 1;
             this.itemPanel45.Text = "itemPanel1";
             // 
-            // checkBoxItem45
+            // XeKhach_Cb36
             // 
-            this.checkBoxItem45.Name = "checkBoxItem45";
-            this.checkBoxItem45.Text = "36";
+            this.XeKhach_Cb36.Name = "XeKhach_Cb36";
+            this.XeKhach_Cb36.Text = "36";
             // 
             // itemPanel40
             // 
@@ -1617,7 +1652,7 @@
             this.itemPanel40.DragDropSupport = true;
             this.itemPanel40.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel40.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem40});
+            this.XeKhach_Cb32});
             this.itemPanel40.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel40.Location = new System.Drawing.Point(301, 232);
             this.itemPanel40.Name = "itemPanel40";
@@ -1625,10 +1660,10 @@
             this.itemPanel40.TabIndex = 1;
             this.itemPanel40.Text = "itemPanel1";
             // 
-            // checkBoxItem40
+            // XeKhach_Cb32
             // 
-            this.checkBoxItem40.Name = "checkBoxItem40";
-            this.checkBoxItem40.Text = "32";
+            this.XeKhach_Cb32.Name = "XeKhach_Cb32";
+            this.XeKhach_Cb32.Text = "32";
             // 
             // itemPanel35
             // 
@@ -1641,7 +1676,7 @@
             this.itemPanel35.DragDropSupport = true;
             this.itemPanel35.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel35.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem35});
+            this.XeKhach_Cb28});
             this.itemPanel35.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel35.Location = new System.Drawing.Point(301, 201);
             this.itemPanel35.Name = "itemPanel35";
@@ -1649,10 +1684,10 @@
             this.itemPanel35.TabIndex = 1;
             this.itemPanel35.Text = "itemPanel1";
             // 
-            // checkBoxItem35
+            // XeKhach_Cb28
             // 
-            this.checkBoxItem35.Name = "checkBoxItem35";
-            this.checkBoxItem35.Text = "28";
+            this.XeKhach_Cb28.Name = "XeKhach_Cb28";
+            this.XeKhach_Cb28.Text = "28";
             // 
             // itemPanel30
             // 
@@ -1665,7 +1700,7 @@
             this.itemPanel30.DragDropSupport = true;
             this.itemPanel30.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel30.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem30});
+            this.XeKhach_Cb24});
             this.itemPanel30.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel30.Location = new System.Drawing.Point(301, 170);
             this.itemPanel30.Name = "itemPanel30";
@@ -1673,10 +1708,10 @@
             this.itemPanel30.TabIndex = 1;
             this.itemPanel30.Text = "itemPanel1";
             // 
-            // checkBoxItem30
+            // XeKhach_Cb24
             // 
-            this.checkBoxItem30.Name = "checkBoxItem30";
-            this.checkBoxItem30.Text = "24";
+            this.XeKhach_Cb24.Name = "XeKhach_Cb24";
+            this.XeKhach_Cb24.Text = "24";
             // 
             // itemPanel25
             // 
@@ -1689,7 +1724,7 @@
             this.itemPanel25.DragDropSupport = true;
             this.itemPanel25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel25.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem25});
+            this.XeKhach_Cb20});
             this.itemPanel25.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel25.Location = new System.Drawing.Point(301, 139);
             this.itemPanel25.Name = "itemPanel25";
@@ -1697,10 +1732,10 @@
             this.itemPanel25.TabIndex = 1;
             this.itemPanel25.Text = "itemPanel1";
             // 
-            // checkBoxItem25
+            // XeKhach_Cb20
             // 
-            this.checkBoxItem25.Name = "checkBoxItem25";
-            this.checkBoxItem25.Text = "20";
+            this.XeKhach_Cb20.Name = "XeKhach_Cb20";
+            this.XeKhach_Cb20.Text = "20";
             // 
             // itemPanel20
             // 
@@ -1713,7 +1748,7 @@
             this.itemPanel20.DragDropSupport = true;
             this.itemPanel20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel20.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem20});
+            this.XeKhach_Cb16});
             this.itemPanel20.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel20.Location = new System.Drawing.Point(301, 108);
             this.itemPanel20.Name = "itemPanel20";
@@ -1721,10 +1756,10 @@
             this.itemPanel20.TabIndex = 1;
             this.itemPanel20.Text = "itemPanel1";
             // 
-            // checkBoxItem20
+            // XeKhach_Cb16
             // 
-            this.checkBoxItem20.Name = "checkBoxItem20";
-            this.checkBoxItem20.Text = "16";
+            this.XeKhach_Cb16.Name = "XeKhach_Cb16";
+            this.XeKhach_Cb16.Text = "16";
             // 
             // itemPanel15
             // 
@@ -1737,7 +1772,7 @@
             this.itemPanel15.DragDropSupport = true;
             this.itemPanel15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel15.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem15});
+            this.XeKhach_Cb12});
             this.itemPanel15.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel15.Location = new System.Drawing.Point(301, 77);
             this.itemPanel15.Name = "itemPanel15";
@@ -1745,10 +1780,10 @@
             this.itemPanel15.TabIndex = 1;
             this.itemPanel15.Text = "itemPanel1";
             // 
-            // checkBoxItem15
+            // XeKhach_Cb12
             // 
-            this.checkBoxItem15.Name = "checkBoxItem15";
-            this.checkBoxItem15.Text = "12";
+            this.XeKhach_Cb12.Name = "XeKhach_Cb12";
+            this.XeKhach_Cb12.Text = "12";
             // 
             // itemPanel10
             // 
@@ -1761,7 +1796,7 @@
             this.itemPanel10.DragDropSupport = true;
             this.itemPanel10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel10.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem10});
+            this.XeKhach_Cb8});
             this.itemPanel10.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel10.Location = new System.Drawing.Point(301, 46);
             this.itemPanel10.Name = "itemPanel10";
@@ -1769,10 +1804,10 @@
             this.itemPanel10.TabIndex = 1;
             this.itemPanel10.Text = "itemPanel1";
             // 
-            // checkBoxItem10
+            // XeKhach_Cb8
             // 
-            this.checkBoxItem10.Name = "checkBoxItem10";
-            this.checkBoxItem10.Text = "8";
+            this.XeKhach_Cb8.Name = "XeKhach_Cb8";
+            this.XeKhach_Cb8.Text = "8";
             // 
             // itemPanel5
             // 
@@ -1785,7 +1820,7 @@
             this.itemPanel5.DragDropSupport = true;
             this.itemPanel5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel5.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem5});
+            this.XeKhach_Cb4});
             this.itemPanel5.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel5.Location = new System.Drawing.Point(301, 15);
             this.itemPanel5.Name = "itemPanel5";
@@ -1793,10 +1828,10 @@
             this.itemPanel5.TabIndex = 1;
             this.itemPanel5.Text = "itemPanel1";
             // 
-            // checkBoxItem5
+            // XeKhach_Cb4
             // 
-            this.checkBoxItem5.Name = "checkBoxItem5";
-            this.checkBoxItem5.Text = "4";
+            this.XeKhach_Cb4.Name = "XeKhach_Cb4";
+            this.XeKhach_Cb4.Text = "4";
             // 
             // itemPanel59
             // 
@@ -1809,7 +1844,7 @@
             this.itemPanel59.DragDropSupport = true;
             this.itemPanel59.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel59.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem59});
+            this.XeKhach_Cb48});
             this.itemPanel59.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel59.Location = new System.Drawing.Point(244, 356);
             this.itemPanel59.Name = "itemPanel59";
@@ -1817,10 +1852,10 @@
             this.itemPanel59.TabIndex = 1;
             this.itemPanel59.Text = "itemPanel1";
             // 
-            // checkBoxItem59
+            // XeKhach_Cb48
             // 
-            this.checkBoxItem59.Name = "checkBoxItem59";
-            this.checkBoxItem59.Text = "48";
+            this.XeKhach_Cb48.Name = "XeKhach_Cb48";
+            this.XeKhach_Cb48.Text = "48";
             // 
             // itemPanel54
             // 
@@ -1833,7 +1868,7 @@
             this.itemPanel54.DragDropSupport = true;
             this.itemPanel54.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel54.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem54});
+            this.XeKhach_Cb43});
             this.itemPanel54.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel54.Location = new System.Drawing.Point(244, 325);
             this.itemPanel54.Name = "itemPanel54";
@@ -1841,10 +1876,10 @@
             this.itemPanel54.TabIndex = 1;
             this.itemPanel54.Text = "itemPanel1";
             // 
-            // checkBoxItem54
+            // XeKhach_Cb43
             // 
-            this.checkBoxItem54.Name = "checkBoxItem54";
-            this.checkBoxItem54.Text = "43";
+            this.XeKhach_Cb43.Name = "XeKhach_Cb43";
+            this.XeKhach_Cb43.Text = "43";
             // 
             // itemPanel49
             // 
@@ -1857,7 +1892,7 @@
             this.itemPanel49.DragDropSupport = true;
             this.itemPanel49.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel49.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem49});
+            this.XeKhach_Cb39});
             this.itemPanel49.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel49.Location = new System.Drawing.Point(244, 294);
             this.itemPanel49.Name = "itemPanel49";
@@ -1865,10 +1900,10 @@
             this.itemPanel49.TabIndex = 1;
             this.itemPanel49.Text = "itemPanel1";
             // 
-            // checkBoxItem49
+            // XeKhach_Cb39
             // 
-            this.checkBoxItem49.Name = "checkBoxItem49";
-            this.checkBoxItem49.Text = "39";
+            this.XeKhach_Cb39.Name = "XeKhach_Cb39";
+            this.XeKhach_Cb39.Text = "39";
             // 
             // itemPanel44
             // 
@@ -1881,7 +1916,7 @@
             this.itemPanel44.DragDropSupport = true;
             this.itemPanel44.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel44.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem44});
+            this.XeKhach_Cb35});
             this.itemPanel44.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel44.Location = new System.Drawing.Point(244, 263);
             this.itemPanel44.Name = "itemPanel44";
@@ -1889,10 +1924,10 @@
             this.itemPanel44.TabIndex = 1;
             this.itemPanel44.Text = "itemPanel1";
             // 
-            // checkBoxItem44
+            // XeKhach_Cb35
             // 
-            this.checkBoxItem44.Name = "checkBoxItem44";
-            this.checkBoxItem44.Text = "35";
+            this.XeKhach_Cb35.Name = "XeKhach_Cb35";
+            this.XeKhach_Cb35.Text = "35";
             // 
             // itemPanel39
             // 
@@ -1905,7 +1940,7 @@
             this.itemPanel39.DragDropSupport = true;
             this.itemPanel39.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel39.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem39});
+            this.XeKhach_Cb31});
             this.itemPanel39.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel39.Location = new System.Drawing.Point(244, 232);
             this.itemPanel39.Name = "itemPanel39";
@@ -1913,10 +1948,10 @@
             this.itemPanel39.TabIndex = 1;
             this.itemPanel39.Text = "itemPanel1";
             // 
-            // checkBoxItem39
+            // XeKhach_Cb31
             // 
-            this.checkBoxItem39.Name = "checkBoxItem39";
-            this.checkBoxItem39.Text = "31";
+            this.XeKhach_Cb31.Name = "XeKhach_Cb31";
+            this.XeKhach_Cb31.Text = "31";
             // 
             // itemPanel34
             // 
@@ -1929,7 +1964,7 @@
             this.itemPanel34.DragDropSupport = true;
             this.itemPanel34.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel34.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem34});
+            this.XeKhach_Cb27});
             this.itemPanel34.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel34.Location = new System.Drawing.Point(244, 201);
             this.itemPanel34.Name = "itemPanel34";
@@ -1937,10 +1972,10 @@
             this.itemPanel34.TabIndex = 1;
             this.itemPanel34.Text = "itemPanel1";
             // 
-            // checkBoxItem34
+            // XeKhach_Cb27
             // 
-            this.checkBoxItem34.Name = "checkBoxItem34";
-            this.checkBoxItem34.Text = "27";
+            this.XeKhach_Cb27.Name = "XeKhach_Cb27";
+            this.XeKhach_Cb27.Text = "27";
             // 
             // itemPanel29
             // 
@@ -1953,7 +1988,7 @@
             this.itemPanel29.DragDropSupport = true;
             this.itemPanel29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel29.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem29});
+            this.XeKhach_Cb23});
             this.itemPanel29.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel29.Location = new System.Drawing.Point(244, 170);
             this.itemPanel29.Name = "itemPanel29";
@@ -1961,10 +1996,10 @@
             this.itemPanel29.TabIndex = 1;
             this.itemPanel29.Text = "itemPanel1";
             // 
-            // checkBoxItem29
+            // XeKhach_Cb23
             // 
-            this.checkBoxItem29.Name = "checkBoxItem29";
-            this.checkBoxItem29.Text = "23";
+            this.XeKhach_Cb23.Name = "XeKhach_Cb23";
+            this.XeKhach_Cb23.Text = "23";
             // 
             // itemPanel24
             // 
@@ -1977,7 +2012,7 @@
             this.itemPanel24.DragDropSupport = true;
             this.itemPanel24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel24.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem24});
+            this.XeKhach_Cb19});
             this.itemPanel24.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel24.Location = new System.Drawing.Point(244, 139);
             this.itemPanel24.Name = "itemPanel24";
@@ -1985,10 +2020,10 @@
             this.itemPanel24.TabIndex = 1;
             this.itemPanel24.Text = "itemPanel1";
             // 
-            // checkBoxItem24
+            // XeKhach_Cb19
             // 
-            this.checkBoxItem24.Name = "checkBoxItem24";
-            this.checkBoxItem24.Text = "19";
+            this.XeKhach_Cb19.Name = "XeKhach_Cb19";
+            this.XeKhach_Cb19.Text = "19";
             // 
             // itemPanel19
             // 
@@ -2001,7 +2036,7 @@
             this.itemPanel19.DragDropSupport = true;
             this.itemPanel19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel19.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem19});
+            this.XeKhach_Cb15});
             this.itemPanel19.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel19.Location = new System.Drawing.Point(244, 108);
             this.itemPanel19.Name = "itemPanel19";
@@ -2009,10 +2044,10 @@
             this.itemPanel19.TabIndex = 1;
             this.itemPanel19.Text = "itemPanel1";
             // 
-            // checkBoxItem19
+            // XeKhach_Cb15
             // 
-            this.checkBoxItem19.Name = "checkBoxItem19";
-            this.checkBoxItem19.Text = "15";
+            this.XeKhach_Cb15.Name = "XeKhach_Cb15";
+            this.XeKhach_Cb15.Text = "15";
             // 
             // itemPanel14
             // 
@@ -2025,7 +2060,7 @@
             this.itemPanel14.DragDropSupport = true;
             this.itemPanel14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel14.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem14});
+            this.XeKhach_Cb11});
             this.itemPanel14.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel14.Location = new System.Drawing.Point(244, 77);
             this.itemPanel14.Name = "itemPanel14";
@@ -2033,10 +2068,10 @@
             this.itemPanel14.TabIndex = 1;
             this.itemPanel14.Text = "itemPanel1";
             // 
-            // checkBoxItem14
+            // XeKhach_Cb11
             // 
-            this.checkBoxItem14.Name = "checkBoxItem14";
-            this.checkBoxItem14.Text = "11";
+            this.XeKhach_Cb11.Name = "XeKhach_Cb11";
+            this.XeKhach_Cb11.Text = "11";
             // 
             // itemPanel9
             // 
@@ -2049,7 +2084,7 @@
             this.itemPanel9.DragDropSupport = true;
             this.itemPanel9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel9.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem9});
+            this.XeKhach_Cb7});
             this.itemPanel9.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel9.Location = new System.Drawing.Point(244, 46);
             this.itemPanel9.Name = "itemPanel9";
@@ -2057,10 +2092,10 @@
             this.itemPanel9.TabIndex = 1;
             this.itemPanel9.Text = "itemPanel1";
             // 
-            // checkBoxItem9
+            // XeKhach_Cb7
             // 
-            this.checkBoxItem9.Name = "checkBoxItem9";
-            this.checkBoxItem9.Text = "7";
+            this.XeKhach_Cb7.Name = "XeKhach_Cb7";
+            this.XeKhach_Cb7.Text = "7";
             // 
             // itemPanel4
             // 
@@ -2073,7 +2108,7 @@
             this.itemPanel4.DragDropSupport = true;
             this.itemPanel4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel4.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem4});
+            this.XeKhach_Cb3});
             this.itemPanel4.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel4.Location = new System.Drawing.Point(244, 15);
             this.itemPanel4.Name = "itemPanel4";
@@ -2081,10 +2116,10 @@
             this.itemPanel4.TabIndex = 1;
             this.itemPanel4.Text = "itemPanel1";
             // 
-            // checkBoxItem4
+            // XeKhach_Cb3
             // 
-            this.checkBoxItem4.Name = "checkBoxItem4";
-            this.checkBoxItem4.Text = "3";
+            this.XeKhach_Cb3.Name = "XeKhach_Cb3";
+            this.XeKhach_Cb3.Text = "3";
             // 
             // itemPanel58
             // 
@@ -2097,7 +2132,7 @@
             this.itemPanel58.DragDropSupport = true;
             this.itemPanel58.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel58.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem58});
+            this.XeKhach_Cb47});
             this.itemPanel58.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel58.Location = new System.Drawing.Point(187, 356);
             this.itemPanel58.Name = "itemPanel58";
@@ -2105,10 +2140,10 @@
             this.itemPanel58.TabIndex = 1;
             this.itemPanel58.Text = "itemPanel1";
             // 
-            // checkBoxItem58
+            // XeKhach_Cb47
             // 
-            this.checkBoxItem58.Name = "checkBoxItem58";
-            this.checkBoxItem58.Text = "47";
+            this.XeKhach_Cb47.Name = "XeKhach_Cb47";
+            this.XeKhach_Cb47.Text = "47";
             // 
             // itemPanel57
             // 
@@ -2121,7 +2156,7 @@
             this.itemPanel57.DragDropSupport = true;
             this.itemPanel57.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel57.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem57});
+            this.XeKhach_Cb46});
             this.itemPanel57.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel57.Location = new System.Drawing.Point(130, 356);
             this.itemPanel57.Name = "itemPanel57";
@@ -2129,10 +2164,10 @@
             this.itemPanel57.TabIndex = 1;
             this.itemPanel57.Text = "itemPanel1";
             // 
-            // checkBoxItem57
+            // XeKhach_Cb46
             // 
-            this.checkBoxItem57.Name = "checkBoxItem57";
-            this.checkBoxItem57.Text = "46";
+            this.XeKhach_Cb46.Name = "XeKhach_Cb46";
+            this.XeKhach_Cb46.Text = "46";
             // 
             // itemPanel52
             // 
@@ -2145,7 +2180,7 @@
             this.itemPanel52.DragDropSupport = true;
             this.itemPanel52.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel52.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem52});
+            this.XeKhach_Cb42});
             this.itemPanel52.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel52.Location = new System.Drawing.Point(130, 325);
             this.itemPanel52.Name = "itemPanel52";
@@ -2153,10 +2188,10 @@
             this.itemPanel52.TabIndex = 1;
             this.itemPanel52.Text = "itemPanel1";
             // 
-            // checkBoxItem52
+            // XeKhach_Cb42
             // 
-            this.checkBoxItem52.Name = "checkBoxItem52";
-            this.checkBoxItem52.Text = "42";
+            this.XeKhach_Cb42.Name = "XeKhach_Cb42";
+            this.XeKhach_Cb42.Text = "42";
             // 
             // itemPanel47
             // 
@@ -2169,7 +2204,7 @@
             this.itemPanel47.DragDropSupport = true;
             this.itemPanel47.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel47.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem47});
+            this.XeKhach_Cb38});
             this.itemPanel47.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel47.Location = new System.Drawing.Point(130, 294);
             this.itemPanel47.Name = "itemPanel47";
@@ -2177,10 +2212,10 @@
             this.itemPanel47.TabIndex = 1;
             this.itemPanel47.Text = "itemPanel1";
             // 
-            // checkBoxItem47
+            // XeKhach_Cb38
             // 
-            this.checkBoxItem47.Name = "checkBoxItem47";
-            this.checkBoxItem47.Text = "38";
+            this.XeKhach_Cb38.Name = "XeKhach_Cb38";
+            this.XeKhach_Cb38.Text = "38";
             // 
             // itemPanel42
             // 
@@ -2193,7 +2228,7 @@
             this.itemPanel42.DragDropSupport = true;
             this.itemPanel42.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel42.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem42});
+            this.XeKhach_Cb34});
             this.itemPanel42.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel42.Location = new System.Drawing.Point(130, 263);
             this.itemPanel42.Name = "itemPanel42";
@@ -2201,10 +2236,10 @@
             this.itemPanel42.TabIndex = 1;
             this.itemPanel42.Text = "itemPanel1";
             // 
-            // checkBoxItem42
+            // XeKhach_Cb34
             // 
-            this.checkBoxItem42.Name = "checkBoxItem42";
-            this.checkBoxItem42.Text = "34";
+            this.XeKhach_Cb34.Name = "XeKhach_Cb34";
+            this.XeKhach_Cb34.Text = "34";
             // 
             // itemPanel37
             // 
@@ -2217,7 +2252,7 @@
             this.itemPanel37.DragDropSupport = true;
             this.itemPanel37.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel37.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem37});
+            this.XeKhach_Cb30});
             this.itemPanel37.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel37.Location = new System.Drawing.Point(130, 232);
             this.itemPanel37.Name = "itemPanel37";
@@ -2225,10 +2260,10 @@
             this.itemPanel37.TabIndex = 1;
             this.itemPanel37.Text = "itemPanel1";
             // 
-            // checkBoxItem37
+            // XeKhach_Cb30
             // 
-            this.checkBoxItem37.Name = "checkBoxItem37";
-            this.checkBoxItem37.Text = "30";
+            this.XeKhach_Cb30.Name = "XeKhach_Cb30";
+            this.XeKhach_Cb30.Text = "30";
             // 
             // itemPanel32
             // 
@@ -2241,7 +2276,7 @@
             this.itemPanel32.DragDropSupport = true;
             this.itemPanel32.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel32.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem32});
+            this.XeKhach_Cb26});
             this.itemPanel32.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel32.Location = new System.Drawing.Point(130, 201);
             this.itemPanel32.Name = "itemPanel32";
@@ -2249,10 +2284,10 @@
             this.itemPanel32.TabIndex = 1;
             this.itemPanel32.Text = "itemPanel1";
             // 
-            // checkBoxItem32
+            // XeKhach_Cb26
             // 
-            this.checkBoxItem32.Name = "checkBoxItem32";
-            this.checkBoxItem32.Text = "26";
+            this.XeKhach_Cb26.Name = "XeKhach_Cb26";
+            this.XeKhach_Cb26.Text = "26";
             // 
             // itemPanel27
             // 
@@ -2265,7 +2300,7 @@
             this.itemPanel27.DragDropSupport = true;
             this.itemPanel27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel27.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem27});
+            this.XeKhach_Cb22});
             this.itemPanel27.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel27.Location = new System.Drawing.Point(130, 170);
             this.itemPanel27.Name = "itemPanel27";
@@ -2273,10 +2308,10 @@
             this.itemPanel27.TabIndex = 1;
             this.itemPanel27.Text = "itemPanel1";
             // 
-            // checkBoxItem27
+            // XeKhach_Cb22
             // 
-            this.checkBoxItem27.Name = "checkBoxItem27";
-            this.checkBoxItem27.Text = "22";
+            this.XeKhach_Cb22.Name = "XeKhach_Cb22";
+            this.XeKhach_Cb22.Text = "22";
             // 
             // itemPanel22
             // 
@@ -2289,7 +2324,7 @@
             this.itemPanel22.DragDropSupport = true;
             this.itemPanel22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel22.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem22});
+            this.XeKhach_Cb18});
             this.itemPanel22.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel22.Location = new System.Drawing.Point(130, 139);
             this.itemPanel22.Name = "itemPanel22";
@@ -2297,10 +2332,10 @@
             this.itemPanel22.TabIndex = 1;
             this.itemPanel22.Text = "itemPanel1";
             // 
-            // checkBoxItem22
+            // XeKhach_Cb18
             // 
-            this.checkBoxItem22.Name = "checkBoxItem22";
-            this.checkBoxItem22.Text = "18";
+            this.XeKhach_Cb18.Name = "XeKhach_Cb18";
+            this.XeKhach_Cb18.Text = "18";
             // 
             // itemPanel17
             // 
@@ -2313,7 +2348,7 @@
             this.itemPanel17.DragDropSupport = true;
             this.itemPanel17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel17.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem17});
+            this.XeKhach_Cb14});
             this.itemPanel17.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel17.Location = new System.Drawing.Point(130, 108);
             this.itemPanel17.Name = "itemPanel17";
@@ -2321,10 +2356,10 @@
             this.itemPanel17.TabIndex = 1;
             this.itemPanel17.Text = "itemPanel1";
             // 
-            // checkBoxItem17
+            // XeKhach_Cb14
             // 
-            this.checkBoxItem17.Name = "checkBoxItem17";
-            this.checkBoxItem17.Text = "14";
+            this.XeKhach_Cb14.Name = "XeKhach_Cb14";
+            this.XeKhach_Cb14.Text = "14";
             // 
             // itemPanel12
             // 
@@ -2337,7 +2372,7 @@
             this.itemPanel12.DragDropSupport = true;
             this.itemPanel12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel12.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem12});
+            this.XeKhach_Cb10});
             this.itemPanel12.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel12.Location = new System.Drawing.Point(130, 77);
             this.itemPanel12.Name = "itemPanel12";
@@ -2345,10 +2380,10 @@
             this.itemPanel12.TabIndex = 1;
             this.itemPanel12.Text = "itemPanel1";
             // 
-            // checkBoxItem12
+            // XeKhach_Cb10
             // 
-            this.checkBoxItem12.Name = "checkBoxItem12";
-            this.checkBoxItem12.Text = "10";
+            this.XeKhach_Cb10.Name = "XeKhach_Cb10";
+            this.XeKhach_Cb10.Text = "10";
             // 
             // itemPanel7
             // 
@@ -2361,7 +2396,7 @@
             this.itemPanel7.DragDropSupport = true;
             this.itemPanel7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel7.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem7});
+            this.XeKhach_Cb6});
             this.itemPanel7.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel7.Location = new System.Drawing.Point(130, 46);
             this.itemPanel7.Name = "itemPanel7";
@@ -2369,10 +2404,10 @@
             this.itemPanel7.TabIndex = 1;
             this.itemPanel7.Text = "itemPanel1";
             // 
-            // checkBoxItem7
+            // XeKhach_Cb6
             // 
-            this.checkBoxItem7.Name = "checkBoxItem7";
-            this.checkBoxItem7.Text = "6";
+            this.XeKhach_Cb6.Name = "XeKhach_Cb6";
+            this.XeKhach_Cb6.Text = "6";
             // 
             // itemPanel2
             // 
@@ -2385,7 +2420,7 @@
             this.itemPanel2.DragDropSupport = true;
             this.itemPanel2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem2});
+            this.XeKhach_Cb2});
             this.itemPanel2.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel2.Location = new System.Drawing.Point(130, 15);
             this.itemPanel2.Name = "itemPanel2";
@@ -2393,10 +2428,10 @@
             this.itemPanel2.TabIndex = 1;
             this.itemPanel2.Text = "itemPanel1";
             // 
-            // checkBoxItem2
+            // XeKhach_Cb2
             // 
-            this.checkBoxItem2.Name = "checkBoxItem2";
-            this.checkBoxItem2.Text = "2";
+            this.XeKhach_Cb2.Name = "XeKhach_Cb2";
+            this.XeKhach_Cb2.Text = "2";
             // 
             // itemPanel56
             // 
@@ -2409,7 +2444,7 @@
             this.itemPanel56.DragDropSupport = true;
             this.itemPanel56.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel56.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem56});
+            this.XeKhach_Cb45});
             this.itemPanel56.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel56.Location = new System.Drawing.Point(73, 356);
             this.itemPanel56.Name = "itemPanel56";
@@ -2417,10 +2452,10 @@
             this.itemPanel56.TabIndex = 1;
             this.itemPanel56.Text = "itemPanel1";
             // 
-            // checkBoxItem56
+            // XeKhach_Cb45
             // 
-            this.checkBoxItem56.Name = "checkBoxItem56";
-            this.checkBoxItem56.Text = "45";
+            this.XeKhach_Cb45.Name = "XeKhach_Cb45";
+            this.XeKhach_Cb45.Text = "45";
             // 
             // itemPanel51
             // 
@@ -2433,7 +2468,7 @@
             this.itemPanel51.DragDropSupport = true;
             this.itemPanel51.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel51.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem51});
+            this.XeKhach_Cb41});
             this.itemPanel51.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel51.Location = new System.Drawing.Point(73, 325);
             this.itemPanel51.Name = "itemPanel51";
@@ -2441,10 +2476,10 @@
             this.itemPanel51.TabIndex = 1;
             this.itemPanel51.Text = "itemPanel1";
             // 
-            // checkBoxItem51
+            // XeKhach_Cb41
             // 
-            this.checkBoxItem51.Name = "checkBoxItem51";
-            this.checkBoxItem51.Text = "41";
+            this.XeKhach_Cb41.Name = "XeKhach_Cb41";
+            this.XeKhach_Cb41.Text = "41";
             // 
             // itemPanel46
             // 
@@ -2457,7 +2492,7 @@
             this.itemPanel46.DragDropSupport = true;
             this.itemPanel46.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel46.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem46});
+            this.XeKhach_Cb37});
             this.itemPanel46.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel46.Location = new System.Drawing.Point(73, 294);
             this.itemPanel46.Name = "itemPanel46";
@@ -2465,10 +2500,10 @@
             this.itemPanel46.TabIndex = 1;
             this.itemPanel46.Text = "itemPanel1";
             // 
-            // checkBoxItem46
+            // XeKhach_Cb37
             // 
-            this.checkBoxItem46.Name = "checkBoxItem46";
-            this.checkBoxItem46.Text = "37";
+            this.XeKhach_Cb37.Name = "XeKhach_Cb37";
+            this.XeKhach_Cb37.Text = "37";
             // 
             // itemPanel41
             // 
@@ -2481,7 +2516,7 @@
             this.itemPanel41.DragDropSupport = true;
             this.itemPanel41.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel41.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem41});
+            this.XeKhach_Cb33});
             this.itemPanel41.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel41.Location = new System.Drawing.Point(73, 263);
             this.itemPanel41.Name = "itemPanel41";
@@ -2489,10 +2524,10 @@
             this.itemPanel41.TabIndex = 1;
             this.itemPanel41.Text = "itemPanel1";
             // 
-            // checkBoxItem41
+            // XeKhach_Cb33
             // 
-            this.checkBoxItem41.Name = "checkBoxItem41";
-            this.checkBoxItem41.Text = "33";
+            this.XeKhach_Cb33.Name = "XeKhach_Cb33";
+            this.XeKhach_Cb33.Text = "33";
             // 
             // itemPanel36
             // 
@@ -2505,7 +2540,7 @@
             this.itemPanel36.DragDropSupport = true;
             this.itemPanel36.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel36.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem36});
+            this.XeKhach_Cb29});
             this.itemPanel36.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel36.Location = new System.Drawing.Point(73, 232);
             this.itemPanel36.Name = "itemPanel36";
@@ -2513,10 +2548,10 @@
             this.itemPanel36.TabIndex = 1;
             this.itemPanel36.Text = "itemPanel1";
             // 
-            // checkBoxItem36
+            // XeKhach_Cb29
             // 
-            this.checkBoxItem36.Name = "checkBoxItem36";
-            this.checkBoxItem36.Text = "29";
+            this.XeKhach_Cb29.Name = "XeKhach_Cb29";
+            this.XeKhach_Cb29.Text = "29";
             // 
             // itemPanel31
             // 
@@ -2529,7 +2564,7 @@
             this.itemPanel31.DragDropSupport = true;
             this.itemPanel31.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel31.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem31});
+            this.XeKhach_Cb25});
             this.itemPanel31.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel31.Location = new System.Drawing.Point(73, 201);
             this.itemPanel31.Name = "itemPanel31";
@@ -2537,10 +2572,10 @@
             this.itemPanel31.TabIndex = 1;
             this.itemPanel31.Text = "itemPanel1";
             // 
-            // checkBoxItem31
+            // XeKhach_Cb25
             // 
-            this.checkBoxItem31.Name = "checkBoxItem31";
-            this.checkBoxItem31.Text = "25";
+            this.XeKhach_Cb25.Name = "XeKhach_Cb25";
+            this.XeKhach_Cb25.Text = "25";
             // 
             // itemPanel26
             // 
@@ -2553,7 +2588,7 @@
             this.itemPanel26.DragDropSupport = true;
             this.itemPanel26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel26.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem26});
+            this.XeKhach_Cb21});
             this.itemPanel26.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel26.Location = new System.Drawing.Point(73, 170);
             this.itemPanel26.Name = "itemPanel26";
@@ -2561,10 +2596,10 @@
             this.itemPanel26.TabIndex = 1;
             this.itemPanel26.Text = "itemPanel1";
             // 
-            // checkBoxItem26
+            // XeKhach_Cb21
             // 
-            this.checkBoxItem26.Name = "checkBoxItem26";
-            this.checkBoxItem26.Text = "21";
+            this.XeKhach_Cb21.Name = "XeKhach_Cb21";
+            this.XeKhach_Cb21.Text = "21";
             // 
             // itemPanel21
             // 
@@ -2577,7 +2612,7 @@
             this.itemPanel21.DragDropSupport = true;
             this.itemPanel21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel21.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem21});
+            this.XeKhach_Cb17});
             this.itemPanel21.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel21.Location = new System.Drawing.Point(73, 139);
             this.itemPanel21.Name = "itemPanel21";
@@ -2585,10 +2620,10 @@
             this.itemPanel21.TabIndex = 1;
             this.itemPanel21.Text = "itemPanel1";
             // 
-            // checkBoxItem21
+            // XeKhach_Cb17
             // 
-            this.checkBoxItem21.Name = "checkBoxItem21";
-            this.checkBoxItem21.Text = "17";
+            this.XeKhach_Cb17.Name = "XeKhach_Cb17";
+            this.XeKhach_Cb17.Text = "17";
             // 
             // itemPanel16
             // 
@@ -2601,7 +2636,7 @@
             this.itemPanel16.DragDropSupport = true;
             this.itemPanel16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel16.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem16});
+            this.XeKhach_Cb13});
             this.itemPanel16.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel16.Location = new System.Drawing.Point(73, 108);
             this.itemPanel16.Name = "itemPanel16";
@@ -2609,10 +2644,10 @@
             this.itemPanel16.TabIndex = 1;
             this.itemPanel16.Text = "itemPanel1";
             // 
-            // checkBoxItem16
+            // XeKhach_Cb13
             // 
-            this.checkBoxItem16.Name = "checkBoxItem16";
-            this.checkBoxItem16.Text = "13";
+            this.XeKhach_Cb13.Name = "XeKhach_Cb13";
+            this.XeKhach_Cb13.Text = "13";
             // 
             // itemPanel11
             // 
@@ -2625,7 +2660,7 @@
             this.itemPanel11.DragDropSupport = true;
             this.itemPanel11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel11.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem11});
+            this.XeKhach_Cb9});
             this.itemPanel11.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel11.Location = new System.Drawing.Point(73, 77);
             this.itemPanel11.Name = "itemPanel11";
@@ -2633,10 +2668,10 @@
             this.itemPanel11.TabIndex = 1;
             this.itemPanel11.Text = "itemPanel1";
             // 
-            // checkBoxItem11
+            // XeKhach_Cb9
             // 
-            this.checkBoxItem11.Name = "checkBoxItem11";
-            this.checkBoxItem11.Text = "9";
+            this.XeKhach_Cb9.Name = "XeKhach_Cb9";
+            this.XeKhach_Cb9.Text = "9";
             // 
             // itemPanel6
             // 
@@ -2649,7 +2684,7 @@
             this.itemPanel6.DragDropSupport = true;
             this.itemPanel6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel6.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem6});
+            this.XeKhach_Cb5});
             this.itemPanel6.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel6.Location = new System.Drawing.Point(73, 46);
             this.itemPanel6.Name = "itemPanel6";
@@ -2657,13 +2692,14 @@
             this.itemPanel6.TabIndex = 1;
             this.itemPanel6.Text = "itemPanel1";
             // 
-            // checkBoxItem6
+            // XeKhach_Cb5
             // 
-            this.checkBoxItem6.Name = "checkBoxItem6";
-            this.checkBoxItem6.Text = "5";
+            this.XeKhach_Cb5.Name = "XeKhach_Cb5";
+            this.XeKhach_Cb5.Text = "5";
             // 
             // itemPanel1
             // 
+            this.itemPanel1.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
@@ -2673,7 +2709,7 @@
             this.itemPanel1.DragDropSupport = true;
             this.itemPanel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemPanel1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.checkBoxItem1});
+            this.XeKhach_Cb1});
             this.itemPanel1.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.itemPanel1.Location = new System.Drawing.Point(73, 15);
             this.itemPanel1.Name = "itemPanel1";
@@ -2681,10 +2717,10 @@
             this.itemPanel1.TabIndex = 1;
             this.itemPanel1.Text = "itemPanel1";
             // 
-            // checkBoxItem1
+            // XeKhach_Cb1
             // 
-            this.checkBoxItem1.Name = "checkBoxItem1";
-            this.checkBoxItem1.Text = "1";
+            this.XeKhach_Cb1.Name = "XeKhach_Cb1";
+            this.XeKhach_Cb1.Text = "1";
             // 
             // tabXeThuong
             // 
@@ -2694,6 +2730,7 @@
             // 
             // panelEx1
             // 
+            this.panelEx1.CanvasColor = System.Drawing.Color.DimGray;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx1.Controls.Add(this.groupPanel1);
             this.panelEx1.Controls.Add(this.groupPanel3);
@@ -2718,7 +2755,13 @@
             // 
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel3.Controls.Add(this.comboBoxEx1);
+            this.groupPanel3.Controls.Add(this.cbbMaChuyenDi);
+            this.groupPanel3.Controls.Add(this.txtGia);
+            this.groupPanel3.Controls.Add(this.labelX6);
+            this.groupPanel3.Controls.Add(this.txtKhoiHanh);
+            this.groupPanel3.Controls.Add(this.labelX5);
+            this.groupPanel3.Controls.Add(this.txtTuyen);
+            this.groupPanel3.Controls.Add(this.labelX4);
             this.groupPanel3.Controls.Add(this.labelX3);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel3.Location = new System.Drawing.Point(719, 77);
@@ -2753,20 +2796,86 @@
             // 
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel3.TabIndex = 110;
-            this.groupPanel3.Text = "Nhập thông tin";
+            this.groupPanel3.Text = "Thông tin";
             // 
-            // comboBoxEx1
+            // cbbMaChuyenDi
             // 
-            this.comboBoxEx1.DisplayMember = "Text";
-            this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxEx1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxEx1.FormattingEnabled = true;
-            this.comboBoxEx1.ItemHeight = 20;
-            this.comboBoxEx1.Location = new System.Drawing.Point(104, 64);
-            this.comboBoxEx1.Name = "comboBoxEx1";
-            this.comboBoxEx1.Size = new System.Drawing.Size(219, 26);
-            this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboBoxEx1.TabIndex = 1;
+            this.cbbMaChuyenDi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbMaChuyenDi.FormattingEnabled = true;
+            this.cbbMaChuyenDi.Location = new System.Drawing.Point(104, 14);
+            this.cbbMaChuyenDi.Name = "cbbMaChuyenDi";
+            this.cbbMaChuyenDi.Size = new System.Drawing.Size(216, 21);
+            this.cbbMaChuyenDi.TabIndex = 45;
+            this.cbbMaChuyenDi.SelectedIndexChanged += new System.EventHandler(this.cbMaChuyenDi_SelectedIndexChanged);
+            // 
+            // txtGia
+            // 
+            this.txtGia.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtGia.ForeColor = System.Drawing.Color.Blue;
+            this.txtGia.Location = new System.Drawing.Point(104, 142);
+            this.txtGia.Name = "txtGia";
+            this.txtGia.ReadOnly = true;
+            this.txtGia.Size = new System.Drawing.Size(216, 26);
+            this.txtGia.TabIndex = 44;
+            // 
+            // labelX6
+            // 
+            // 
+            // 
+            // 
+            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX6.Location = new System.Drawing.Point(14, 142);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(84, 23);
+            this.labelX6.TabIndex = 43;
+            this.labelX6.Text = "Giá vé:";
+            // 
+            // txtKhoiHanh
+            // 
+            this.txtKhoiHanh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtKhoiHanh.ForeColor = System.Drawing.Color.Blue;
+            this.txtKhoiHanh.Location = new System.Drawing.Point(104, 102);
+            this.txtKhoiHanh.Name = "txtKhoiHanh";
+            this.txtKhoiHanh.ReadOnly = true;
+            this.txtKhoiHanh.Size = new System.Drawing.Size(216, 26);
+            this.txtKhoiHanh.TabIndex = 41;
+            // 
+            // labelX5
+            // 
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX5.Location = new System.Drawing.Point(14, 102);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(84, 23);
+            this.labelX5.TabIndex = 40;
+            this.labelX5.Text = "Khởi hành:";
+            // 
+            // txtTuyen
+            // 
+            this.txtTuyen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTuyen.ForeColor = System.Drawing.Color.Blue;
+            this.txtTuyen.Location = new System.Drawing.Point(104, 56);
+            this.txtTuyen.Name = "txtTuyen";
+            this.txtTuyen.ReadOnly = true;
+            this.txtTuyen.Size = new System.Drawing.Size(216, 26);
+            this.txtTuyen.TabIndex = 39;
+            // 
+            // labelX4
+            // 
+            // 
+            // 
+            // 
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX4.Location = new System.Drawing.Point(14, 59);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(84, 23);
+            this.labelX4.TabIndex = 2;
+            this.labelX4.Text = "Tuyến:";
             // 
             // labelX3
             // 
@@ -2775,57 +2884,11 @@
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX3.Location = new System.Drawing.Point(14, 64);
+            this.labelX3.Location = new System.Drawing.Point(14, 14);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(84, 23);
             this.labelX3.TabIndex = 0;
             this.labelX3.Text = "Chuyến đi:";
-            // 
-            // btnLapVe
-            // 
-            this.btnLapVe.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnLapVe.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnLapVe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLapVe.Image = global::BanVeXePhuongTrang.Properties.Resources.Save_icon;
-            this.btnLapVe.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnLapVe.Location = new System.Drawing.Point(83, 20);
-            this.btnLapVe.Name = "btnLapVe";
-            this.btnLapVe.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnLapVe.Size = new System.Drawing.Size(168, 37);
-            this.btnLapVe.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnLapVe.TabIndex = 73;
-            this.btnLapVe.Text = "Lập vé";
-            this.btnLapVe.Click += new System.EventHandler(this.btnLapVe_Click);
-            // 
-            // btnTaoMoi
-            // 
-            this.btnTaoMoi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnTaoMoi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnTaoMoi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTaoMoi.Image = global::BanVeXePhuongTrang.Properties.Resources.create_icon;
-            this.btnTaoMoi.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnTaoMoi.Location = new System.Drawing.Point(83, 75);
-            this.btnTaoMoi.Name = "btnTaoMoi";
-            this.btnTaoMoi.Size = new System.Drawing.Size(168, 37);
-            this.btnTaoMoi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnTaoMoi.TabIndex = 73;
-            this.btnTaoMoi.Text = "Tạo Mới";
-            this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnThoat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Image = global::BanVeXePhuongTrang.Properties.Resources.Windows_Close_Program_icon;
-            this.btnThoat.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.btnThoat.Location = new System.Drawing.Point(83, 123);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(168, 37);
-            this.btnThoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnThoat.TabIndex = 73;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // PictureBox1
             // 
@@ -2845,6 +2908,7 @@
             this.Controls.Add(this.panelEx1);
             this.Name = "frmVeXe";
             this.Text = "Vé Xe";
+            this.Load += new System.EventHandler(this.frmVeXe_Load);
             this.tabControlPanel2.ResumeLayout(false);
             this.panelEx3.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
@@ -2855,6 +2919,7 @@
             this.panelEx2.ResumeLayout(false);
             this.panelEx1.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);
+            this.groupPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -2868,110 +2933,107 @@
         private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
         private DevComponents.DotNetBar.ButtonX btnLapVe;
-        private DevComponents.DotNetBar.ButtonX btnTaoMoi;
         private DevComponents.DotNetBar.ButtonX btnThoat;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.TabControl tabControl1;
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel1;
         private DevComponents.DotNetBar.PanelEx panelEx2;
         private DevComponents.DotNetBar.ItemPanel itemPanel60;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem60;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb49;
         private DevComponents.DotNetBar.ItemPanel itemPanel55;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem55;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb44;
         private DevComponents.DotNetBar.ItemPanel itemPanel50;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem50;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb40;
         private DevComponents.DotNetBar.ItemPanel itemPanel45;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem45;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb36;
         private DevComponents.DotNetBar.ItemPanel itemPanel40;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem40;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb32;
         private DevComponents.DotNetBar.ItemPanel itemPanel35;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem35;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb28;
         private DevComponents.DotNetBar.ItemPanel itemPanel30;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem30;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb24;
         private DevComponents.DotNetBar.ItemPanel itemPanel25;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem25;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb20;
         private DevComponents.DotNetBar.ItemPanel itemPanel20;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem20;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb16;
         private DevComponents.DotNetBar.ItemPanel itemPanel15;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem15;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb12;
         private DevComponents.DotNetBar.ItemPanel itemPanel10;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem10;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb8;
         private DevComponents.DotNetBar.ItemPanel itemPanel5;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem5;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb4;
         private DevComponents.DotNetBar.ItemPanel itemPanel59;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem59;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb48;
         private DevComponents.DotNetBar.ItemPanel itemPanel54;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem54;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb43;
         private DevComponents.DotNetBar.ItemPanel itemPanel49;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem49;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb39;
         private DevComponents.DotNetBar.ItemPanel itemPanel44;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem44;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb35;
         private DevComponents.DotNetBar.ItemPanel itemPanel39;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem39;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb31;
         private DevComponents.DotNetBar.ItemPanel itemPanel34;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem34;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb27;
         private DevComponents.DotNetBar.ItemPanel itemPanel29;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem29;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb23;
         private DevComponents.DotNetBar.ItemPanel itemPanel24;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem24;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb19;
         private DevComponents.DotNetBar.ItemPanel itemPanel19;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem19;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb15;
         private DevComponents.DotNetBar.ItemPanel itemPanel14;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem14;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb11;
         private DevComponents.DotNetBar.ItemPanel itemPanel9;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem9;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb7;
         private DevComponents.DotNetBar.ItemPanel itemPanel4;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem4;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb3;
         private DevComponents.DotNetBar.ItemPanel itemPanel58;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem58;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb47;
         private DevComponents.DotNetBar.ItemPanel itemPanel57;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem57;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb46;
         private DevComponents.DotNetBar.ItemPanel itemPanel52;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem52;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb42;
         private DevComponents.DotNetBar.ItemPanel itemPanel47;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem47;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb38;
         private DevComponents.DotNetBar.ItemPanel itemPanel42;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem42;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb34;
         private DevComponents.DotNetBar.ItemPanel itemPanel37;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem37;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb30;
         private DevComponents.DotNetBar.ItemPanel itemPanel32;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem32;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb26;
         private DevComponents.DotNetBar.ItemPanel itemPanel27;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem27;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb22;
         private DevComponents.DotNetBar.ItemPanel itemPanel22;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem22;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb18;
         private DevComponents.DotNetBar.ItemPanel itemPanel17;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem17;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb14;
         private DevComponents.DotNetBar.ItemPanel itemPanel12;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem12;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb10;
         private DevComponents.DotNetBar.ItemPanel itemPanel7;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem7;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb6;
         private DevComponents.DotNetBar.ItemPanel itemPanel2;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem2;
         private DevComponents.DotNetBar.ItemPanel itemPanel56;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem56;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb45;
         private DevComponents.DotNetBar.ItemPanel itemPanel51;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem51;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb41;
         private DevComponents.DotNetBar.ItemPanel itemPanel46;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem46;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb37;
         private DevComponents.DotNetBar.ItemPanel itemPanel41;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem41;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb33;
         private DevComponents.DotNetBar.ItemPanel itemPanel36;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem36;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb29;
         private DevComponents.DotNetBar.ItemPanel itemPanel31;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem31;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb25;
         private DevComponents.DotNetBar.ItemPanel itemPanel26;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem26;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb21;
         private DevComponents.DotNetBar.ItemPanel itemPanel21;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem21;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb17;
         private DevComponents.DotNetBar.ItemPanel itemPanel16;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem16;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb13;
         private DevComponents.DotNetBar.ItemPanel itemPanel11;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem11;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb9;
         private DevComponents.DotNetBar.ItemPanel itemPanel6;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem6;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb5;
         private DevComponents.DotNetBar.ItemPanel itemPanel1;
-        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem1;
         private DevComponents.DotNetBar.TabItem tabXeThuong;
         private DevComponents.DotNetBar.PanelEx panelEx1;
         private DevComponents.DotNetBar.PanelEx panelEx3;
@@ -3058,7 +3120,16 @@
         private DevComponents.DotNetBar.ItemPanel itemPanel92;
         private DevComponents.DotNetBar.CheckBoxItem checkBoxItem92;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
         private DevComponents.DotNetBar.LabelX labelX3;
+        private DevComponents.DotNetBar.LabelX labelX4;
+        internal System.Windows.Forms.TextBox txtGia;
+        private DevComponents.DotNetBar.LabelX labelX6;
+        internal System.Windows.Forms.TextBox txtKhoiHanh;
+        private DevComponents.DotNetBar.LabelX labelX5;
+        internal System.Windows.Forms.TextBox txtTuyen;
+        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem1;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb2;
+        private DevComponents.DotNetBar.CheckBoxItem XeKhach_Cb1;
+        private System.Windows.Forms.ComboBox cbbMaChuyenDi;
     }
 }

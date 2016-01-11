@@ -45,9 +45,13 @@ namespace BanVeXePhuongTrang.GUI
 
         private void frmQuanLyTuyenXe_Load(object sender, EventArgs e)
         {
-            dtgDanhSachTuyen.Rows.Clear();
-            foreach(var item in new QUANLYXEKHACHEntities().tblTuyenXes.ToList())
-                dtgDanhSachTuyen.Rows.Add(item.MaTuyen, item.tblBenXe.TenBenXe, item.tblBenXe1.TenBenXe);
+            try
+            {
+                dtgDanhSachTuyen.Rows.Clear();
+                foreach (var item in new QUANLYXEKHACHEntities().tblTuyenXes.ToList())
+                    dtgDanhSachTuyen.Rows.Add(item.MaTuyen, item.tblBenXe.TenBenXe, item.tblBenXe1.TenBenXe);
+            }
+            catch { }   
         }
     }
 }

@@ -17,8 +17,6 @@ namespace BanVeXePhuongTrang.GUI
         public frmTraCuuChuyenDi()
         {
             InitializeComponent();
-
-           
         }
 
         private void btThoat_Click(object sender, EventArgs e)
@@ -35,6 +33,7 @@ namespace BanVeXePhuongTrang.GUI
             {
                 this.dgvTraCuu.AutoGenerateColumns = false;
                 dgvTraCuu.Rows.Clear();
+                              
                 foreach (var item in db.tblChuyenDis.ToList())
                 {                                   
                     dgvTraCuu.Rows.Add(item.tblXeKhach.tblTuyenXe.MaBenXeDi,
@@ -45,7 +44,6 @@ namespace BanVeXePhuongTrang.GUI
                                             item.SoGheTrong                                          
                                             );
                 }
-
             }
             catch (Exception ex)
             {
@@ -53,22 +51,10 @@ namespace BanVeXePhuongTrang.GUI
             }
         }
 
-        private void cbBenXeDi_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void cbBenXeDen_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
-        }
-
         private void cbBenXeDi_MouseClick(object sender, MouseEventArgs e)
         {
             try{
                 cbBenXeDi.Items.Clear();
-               
-                
             }
             catch { }
         }
@@ -77,9 +63,6 @@ namespace BanVeXePhuongTrang.GUI
         {
             try {
                 cbBenXeDen.Items.Clear();
-                
-                //QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
-                //cbBenXeDi.DataSource = db.tblBenXes.Select(t => t.TenBenXe).ToList();
             }
             catch { }
         }
@@ -88,8 +71,7 @@ namespace BanVeXePhuongTrang.GUI
         {
             try { 
             QUANLYXEKHACHEntities db = new QUANLYXEKHACHEntities();
-            cbBenXeDi.DataSource = db.tblBenXes.Select(t => t.TenBenXe).ToList();
-            cbBenXeDen.Items.Clear();           
+            cbBenXeDi.DataSource = db.tblBenXes.Select(t => t.TenBenXe).ToList();        
             cbBenXeDen.DataSource = db.tblBenXes.Select(t => t.TenBenXe).ToList();
             }
             catch { }

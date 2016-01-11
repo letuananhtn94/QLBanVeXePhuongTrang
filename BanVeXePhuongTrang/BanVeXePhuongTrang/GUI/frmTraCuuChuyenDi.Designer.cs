@@ -172,7 +172,6 @@
             this.cbBenXeDi.Name = "cbBenXeDi";
             this.cbBenXeDi.Size = new System.Drawing.Size(235, 25);
             this.cbBenXeDi.TabIndex = 40;
-            this.cbBenXeDi.SelectedIndexChanged += new System.EventHandler(this.cbBenXeDi_SelectedIndexChanged);
             this.cbBenXeDi.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbBenXeDi_MouseClick);
             // 
             // btnTim
@@ -199,7 +198,6 @@
             this.cbBenXeDen.Name = "cbBenXeDen";
             this.cbBenXeDen.Size = new System.Drawing.Size(235, 25);
             this.cbBenXeDen.TabIndex = 41;
-            this.cbBenXeDen.SelectedIndexChanged += new System.EventHandler(this.cbBenXeDen_SelectedIndexChanged);
             this.cbBenXeDen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbBenXeDen_MouseClick);
             // 
             // Label4

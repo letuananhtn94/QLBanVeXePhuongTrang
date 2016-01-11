@@ -24,7 +24,6 @@ namespace BanVeXePhuongTrang.GUI
         {
             try
             {
-                dtgDanhSachBen.Rows.Clear();
                 dtgDanhSachBen.DataSource = new QUANLYXEKHACHEntities().tblBenXes.ToList<tblBenXe>();
             }catch
             { }

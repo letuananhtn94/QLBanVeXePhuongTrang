@@ -43,16 +43,31 @@
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.bar1 = new DevComponents.DotNetBar.Bar();
             this.lbthoigian = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lbTenDangNhap = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.exPannelChonNhanh = new DevComponents.DotNetBar.ExpandablePanel();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.btnThoat = new DevComponents.DotNetBar.ButtonX();
+            this.btnBaoCaoNam = new DevComponents.DotNetBar.ButtonX();
+            this.btnBaoCaoThang = new DevComponents.DotNetBar.ButtonX();
+            this.btnTraCuu = new DevComponents.DotNetBar.ButtonX();
+            this.btnDatVe = new DevComponents.DotNetBar.ButtonX();
+            this.btnVe = new DevComponents.DotNetBar.ButtonX();
+            this.btnNhanLich = new DevComponents.DotNetBar.ButtonX();
             this.tabControl = new DevComponents.DotNetBar.TabControl();
             this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
             this.itemContainer1 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer2 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer3 = new DevComponents.DotNetBar.ItemContainer();
+            this.buttonItem3 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem4 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem5 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem6 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem7 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem8 = new DevComponents.DotNetBar.ButtonItem();
             this.galleryContainer1 = new DevComponents.DotNetBar.GalleryContainer();
             this.labelItem8 = new DevComponents.DotNetBar.LabelItem();
             this.buttonItem9 = new DevComponents.DotNetBar.ButtonItem();
@@ -60,6 +75,8 @@
             this.buttonItem11 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem12 = new DevComponents.DotNetBar.ButtonItem();
             this.itemContainer4 = new DevComponents.DotNetBar.ItemContainer();
+            this.buttonItem13 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem14 = new DevComponents.DotNetBar.ButtonItem();
             this.itemContainer5 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer6 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer7 = new DevComponents.DotNetBar.ItemContainer();
@@ -462,7 +479,7 @@
             // 
             this.lbTenDangNhap.AutoSize = true;
             this.lbTenDangNhap.BackColor = System.Drawing.Color.Transparent;
-            this.lbTenDangNhap.Location = new System.Drawing.Point(453, 4);
+            this.lbTenDangNhap.Location = new System.Drawing.Point(453, 6);
             this.lbTenDangNhap.Name = "lbTenDangNhap";
             this.lbTenDangNhap.Size = new System.Drawing.Size(95, 15);
             this.lbTenDangNhap.TabIndex = 7;
@@ -3100,8 +3117,11 @@
             this.ribbonControl1.Controls.Add(this.rbpBaoCao);
             this.ribbonControl1.Controls.Add(this.rbpThayDoi);
             this.ribbonControl1.Controls.Add(this.rbpPhanQuyen);
+<<<<<<< c89da76aa3ee940704eaaddaa7da8c510a5e2f98
             this.ribbonControl1.Controls.Add(this.rbpDanhMuc);
             this.ribbonControl1.Controls.Add(this.rbpTraCuu);
+=======
+>>>>>>> 294feff5aa9cefe1ede3d62f0f850862e11140ac
             this.ribbonControl1.Controls.Add(this.rbpHeThong);
             this.ribbonControl1.Controls.Add(this.rbpGioiThieu);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -3558,7 +3578,6 @@
             // 
             this.rbpTraCuu.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.rbpTraCuu.TabIndex = 7;
-            this.rbpTraCuu.Visible = false;
             // 
             // rbTraCuu
             // 
@@ -3970,6 +3989,7 @@
             // 
             // ribbonTabItem3
             // 
+            this.ribbonTabItem3.Checked = true;
             this.ribbonTabItem3.Name = "ribbonTabItem3";
             this.ribbonTabItem3.Panel = this.rbpTraCuu;
             this.ribbonTabItem3.Text = "Tra cứu";

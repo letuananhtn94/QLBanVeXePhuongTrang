@@ -18,6 +18,9 @@ namespace BanVeXePhuongTrang.GUI
         public frmQuanLyXe()
         {
             InitializeComponent();
+
+            dtgDSXeKhach.AllowUserToAddRows = false;
+            dtgDSXeTrungChuyen.AllowUserToAddRows = false;
         }
 
         private void btThem_Click(object sender, EventArgs e)

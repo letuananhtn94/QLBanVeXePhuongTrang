@@ -107,6 +107,10 @@
     <Compile Include="BLL\BLL_BenXe.cs" />
     <Compile Include="BLL\BLL_NhanVien.cs" />
     <Compile Include="BLL\BLL_TaiKhoan.cs" />
+    <Compile Include="BLL\BLL_ChiTietChuyenDi.cs" />
+    <Compile Include="BLL\BLL_ChiTietPhieuDatCho.cs" />
+    <Compile Include="BLL\BLL_ChuyenDi.cs" />
+    <Compile Include="BLL\BLL_PhieuDatCho.cs" />
     <Compile Include="BLL\BLL_TuyenXe.cs" />
     <Compile Include="BLL\BLL_XeKhach.cs" />
     <Compile Include="BLL\BLL_XeTrungChuyen.cs" />
